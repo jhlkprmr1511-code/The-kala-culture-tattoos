@@ -1,163 +1,1012 @@
-') 12 2, auto; } a, button { cursor: url('data:image/svg+xml;utf8,') 12 2, pointer; } /* Floating Buttons */ .floating-btn-whatsapp { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 32px; cursor: pointer; z-index: 40; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); text-decoration: none; animation: float 3s ease-in-out infinite; border: 3px solid white; } .floating-btn-call { position: fixed; bottom: 110px; right: 30px; width: 60px; height: 60px; background: #1a1a1a; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; cursor: pointer; z-index: 40; box-shadow: 0 4px 15px rgba(26, 26, 26, 0.4); text-decoration: none; animation: float 3s ease-in-out infinite; animation-delay: 0.2s; border: 3px solid white; } .floating-btn-whatsapp:hover, .floating-btn-call:hover { transform: scale(1.15); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); } @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } } /* Header */ header { background: white; padding: 20px 40px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 8px rgba(0,0,0,0.08); } .header-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; line-height: 1; } .logo-main { color: #1a1a1a; } .logo-sub { font-size: 11px; color: #888; letter-spacing: 1.5px; margin-top: 4px; font-weight: 600; } nav { display: flex; gap: 40px; list-style: none; } nav a { text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 14px; transition: color 0.3s; position: relative; } nav a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #1a1a1a; transition: width 0.3s; } nav a:hover::after { width: 100%; } @media (max-width: 768px) { nav { display: none; } header { padding: 15px 20px; } } /* Offer Banner - Scrolling */ .offer-banner { background: #1a1a1a; color: white; padding: 16px 20px; overflow: hidden; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; } .offer-scroll { display: flex; gap: 80px; animation: scroll 20s linear infinite; white-space: nowrap; } .offer-item { display: flex; align-items: center; gap: 6px; } @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } } .offer-scroll:hover { animation-play-state: paused; } /* Hero Section */ .hero { background: linear-gradient(rgba(26, 26, 26, 0.65), rgba(26, 26, 26, 0.65)), url('data:image/svg+xml;utf8,'); background-size: cover; background-position: center; color: white; padding: 120px 40px; text-align: center; position: relative; min-height: 600px; display: flex; align-items: center; justify-content: center; } .hero-content { max-width: 900px; z-index: 2; } .hero h1 { font-size: 72px; font-weight: 800; margin-bottom: 20px; line-height: 1.2; letter-spacing: -1px; animation: fadeInUp 0.8s ease-out; } .hero p { font-size: 20px; color: #e0e0e0; margin-bottom: 40px; animation: fadeInUp 0.8s ease-out 0.2s both; font-weight: 500; } .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 0.8s ease-out 0.4s both; } .btn { padding: 16px 40px; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; text-decoration: none; transition: all 0.3s; display: inline-block; font-family: 'Sora', sans-serif; } .btn-book { background: white; color: #1a1a1a; } .btn-book:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(255,255,255,0.2); } .btn-explore { background: transparent; color: white; border: 2px solid white; } .btn-explore:hover { background: white; color: #1a1a1a; } @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } } /* Stats Section - Horizontal */ .stats-section { background: white; padding: 80px 40px; margin-top: -60px; position: relative; z-index: 3; } .stats-grid { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; } .stat-item { text-align: center; flex: 1; min-width: 150px; } .stat-number { font-size: 56px; font-weight: 800; color: #1a1a1a; margin-bottom: 10px; line-height: 1; letter-spacing: -1px; font-family: 'Sora', sans-serif; } .stat-plus { font-size: 44px; margin-left: 2px; } .stat-label { font-size: 14px; color: #666; font-weight: 600; letter-spacing: 0.3px; } /* Features Grid */ section { padding: 80px 40px; max-width: 1400px; margin: 0 auto; } .section-title { font-size: 48px; font-weight: 800; text-align: center; margin-bottom: 60px; letter-spacing: -1px; font-family: 'Sora', sans-serif; } .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; } .feature-card { background: #f9f9f9; padding: 40px; border-radius: 12px; text-align: center; border: 1px solid #e5e5e5; transition: all 0.3s; } .feature-card:hover { background: #f0f0f0; border-color: #1a1a1a; transform: translateY(-5px); } .feature-icon { font-size: 48px; margin-bottom: 20px; } .feature-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .feature-card p { font-size: 14px; color: #666; line-height: 1.6; font-weight: 500; } /* Carousel */ .carousel-wrapper { background: white; } .carousel-items { display: flex; gap: 30px; overflow-x: auto; padding: 20px 0; scroll-behavior: smooth; } .carousel-item { min-width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: #f9f9f9; padding: 40px; border-radius: 12px; } .carousel-image { width: 100%; height: 350px; background: #e5e5e5; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px; } .carousel-content h3 { font-size: 24px; font-weight: 700; margin-bottom: 15px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .carousel-content p { font-size: 15px; color: #666; line-height: 1.7; margin-bottom: 15px; font-weight: 500; } .carousel-rating { color: #1a1a1a; font-weight: 700; margin: 15px 0; } /* School Section */ .school-section { background: #f5f5f5; border-radius: 12px; padding: 60px; text-align: center; } .school-section h2 { font-size: 32px; font-weight: 800; margin-bottom: 15px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .school-number { font-size: 72px; font-weight: 800; color: #1a1a1a; margin: 30px 0; letter-spacing: -1px; font-family: 'Sora', sans-serif; } .school-section p { font-size: 16px; color: #666; margin-bottom: 30px; font-weight: 500; } /* Contact Section */ .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; } .map-container { border-radius: 12px; overflow: hidden; height: 450px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); } .map-container iframe { width: 100%; height: 100%; border: none; } .form-box { background: #f9f9f9; padding: 40px; border-radius: 12px; border: 1px solid #e5e5e5; } .form-box h3 { font-size: 24px; font-weight: 700; margin-bottom: 30px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .form-box input, .form-box textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 2px solid #e5e5e5; border-radius: 8px; font-size: 14px; font-family: 'Sora', sans-serif; transition: border-color 0.3s; font-weight: 500; } .form-box input:focus, .form-box textarea:focus { outline: none; border-color: #1a1a1a; } .form-box button { width: 100%; background: #1a1a1a; color: white; padding: 16px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: 'Sora', sans-serif; font-size: 15px; } .form-box button:hover { background: #333; transform: translateY(-2px); } .contact-info { margin-top: 30px; padding-top: 30px; border-top: 2px solid #e5e5e5; text-align: center; } .contact-info p { color: #666; margin-bottom: 12px; font-size: 14px; font-weight: 500; } .contact-info p strong { color: #1a1a1a; font-weight: 700; } /* Footer */ footer { background: #1a1a1a; color: white; padding: 60px 40px 20px; font-family: 'Sora', sans-serif; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; } .footer-section h3 { font-weight: 700; margin-bottom: 20px; letter-spacing: -0.3px; font-size: 16px; } .footer-section a { color: #d0d0d0; text-decoration: none; font-size: 14px; transition: color 0.3s; display: block; margin-bottom: 10px; font-weight: 500; } .footer-section a:hover { color: white; } .footer-bottom { text-align: center; border-top: 1px solid #333; padding-top: 20px; color: #888; font-size: 13px; } @media (max-width: 768px) { .hero { padding: 60px 20px; min-height: 400px; } .hero h1 { font-size: 40px; } .hero p { font-size: 16px; } .contact-grid { grid-template-columns: 1fr; } .carousel-item { grid-template-columns: 1fr; } .hero-buttons { flex-direction: column; } .btn { width: 100%; } section { padding: 40px 20px; } .section-title { font-size: 32px; } .stats-grid { gap: 30px; } }
-The Kala Culture
-TATTOO STUDIO
-Home Services Process Gallery School Contact Instagram
-🎯 UPTO 30% OFF
-📅 5+ YEARS EXPERIENCE
-👥 500+ CUSTOMERS
-⭐ 5★ RATING
-🛡️ 100% SAFE & HYGIENIC
-💰 ₹399 PER SQ INCH
-🎯 UPTO 30% OFF
-📅 5+ YEARS EXPERIENCE
-👥 500+ CUSTOMERS
-⭐ 5★ RATING
-🛡️ 100% SAFE & HYGIENIC
-💰 ₹399 PER SQ INCH
-Best Tattoo Studio
-in Vadodara
-Premium tattoos with precision & artistry
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Book Now Explore Services
-5+
-Years Experience
-500+
-Happy Customers
-5★
-Google Rating
-100%
-Safe & Hygienic
-Our Specialties
-🎨
-Custom Designs
-Unique tattoos designed specifically for you
+<meta name="description" content="The Kala Culture Tattoos - Best Tattoo Studio in Vadodara. Custom tattoos, realistic tattoos, fine line tattoos, couple tattoos and professional tattoo services.">
+<meta name="keywords" content="tattoo studio Vadodara, best tattoo artist Vadodara, tattoo shop Vadodara, custom tattoos Vadodara, realistic tattoos Vadodara, fine line tattoos Vadodara">
+<meta name="author" content="The Kala Culture Tattoos">
 
-👁️
-Realism Tattoos
-Hyper-realistic portraits and detailed artwork
+<title>The Kala Culture Tattoos | Best Tattoo Studio in Vadodara</title>
 
-✏️
-Fine Line Work
-Delicate and elegant minimalist designs
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-🧵
-Sleeve Tattoos
-Complete full or half sleeve masterpieces
+html {
+    scroll-behavior: smooth;
+}
 
-💫
-Religious Tattoos
-Spiritual designs with cultural significance
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
 
-💑
-Matching Tattoos
-Couple designs that complement perfectly
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-Client Stories
-📸 Client Photo
-Raj's Sleeve Tattoo
-Got an amazing full sleeve done. Jaimin's precision and creativity are truly unmatched. The tattoo turned out exactly as I envisioned it!
+img {
+    max-width: 100%;
+    display: block;
+}
 
-⭐⭐⭐⭐⭐ Amazing Experience
-Raj P. • Vadodara
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
 
-📸 Client Photo
-Priya's Portrait Tattoo
-The realism in my portrait tattoo is absolutely incredible! Every single detail is perfect. Professional, hygienic, and the best experience ever.
+/* ================= NAVBAR ================= */
 
-⭐⭐⭐⭐⭐ Highly Recommended
-Priya S. • Vadodara
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid #eeeeee;
+    z-index: 1000;
+}
 
-📸 Client Photo
-Aditya's Fine Line Design
-Absolutely stunning fine line work. The attention to detail and clean execution is remarkable. Will definitely come back for more tattoos!
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-⭐⭐⭐⭐⭐ Outstanding Quality
-Aditya M. • Vadodara
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
 
-How It Works
-01
-Consultation
-Share your tattoo vision and discuss design preferences
+.logo span {
+    color: #777777;
+}
 
-02
-Design
-Custom design created and sized perfectly for your body
+.nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
 
-03
-Precision Inking
-Professional execution with sterile equipment
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+}
 
-04
-Aftercare
-Complete kit and instructions for perfect healing
+.nav-links a:hover {
+    color: #777777;
+}
 
-Tattoo Training Academy
-Professional tattoo training program
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
 
-10+
-Trained Professional Students
+/* ================= HERO ================= */
 
-Enroll Now
-Meet Jaimin Parmar
-🎨 Artist Photo
-Use Admin to upload
-Jaimin Parmar
-With extensive experience in tattoo artistry and a deep understanding of skin anatomy, Jaimin creates custom tattoos designed to complement the body's natural flow.
+.hero {
+    min-height: 100vh;
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(255,255,255,0.94),rgba(255,255,255,0.94)),
+        radial-gradient(circle at top right,#dddddd,transparent 40%);
+}
 
-Every piece is executed with precision using sterilized equipment and premium-grade inks, with a strong focus on hygiene, detail and long-term quality.
+.hero-content {
+    max-width: 850px;
+}
 
-10+ Years of Experience
-Client Reviews
-★★★★★
-“I recently got a sleeve tattoo done at Kala Culture Tattoo Studio, and I couldn't be happier with the experience. The artist was incredibly professional and took time to understand my vision.”
+.badge {
+    display: inline-block;
+    border: 1px solid #111111;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
 
-Ujjwal Panchal
-Vadodara
+.hero h1 {
+    font-size: clamp(45px,8vw,90px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+}
 
-★★★★★
-“Best tattoo studio in Vadodara! Professional artists, clean environment, and amazing customer service. My tattoo looks incredible and healed perfectly.”
+.hero h1 span {
+    color: #777777;
+}
 
-Satisfied Client
-Vadodara
+.hero p {
+    max-width: 680px;
+    font-size: 19px;
+    color: #555555;
+    margin-bottom: 35px;
+}
 
-★★★★★
-“Highly recommended! The team is skilled, hygienic, and very friendly. They made my first tattoo experience stress-free and amazing.”
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-Satisfied Client
-Vadodara
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #111111;
+    transition: 0.2s;
+}
 
-Get In Touch
+.btn-dark {
+    background: #111111;
+    color: white;
+}
 
-Send us a Message
-Your Full Name
- 
-Your Email
- 
-Your Phone Number
- 
-Tell us about your tattoo idea...
- Send Inquiry
-📍 Location
-102, Neelkanth Gold Complex
-Vasna-Bhayli Rd, Vadodara
+.btn-dark:hover {
+    background: #444444;
+}
 
-📞 Phone
-+91 9157714414
+.btn-light:hover {
+    background: #111111;
+    color: white;
+}
 
-📧 Email
-thekalaculture0@gmail.com
+/* ================= GENERAL ================= */
 
-The Kala Culture Tattoos
-Premium tattoo studio with 5+ years of expertise and 500+ satisfied customers.
+section {
+    padding: 100px 0;
+}
 
-Quick Links
-Home Services Gallery School Contact
-Follow Us
-Instagram WhatsApp Google Maps
-Hours
-Mon - Sun: 10 AM - 8 PM
-Emergency: 24/7 Available
+.section-heading {
+    margin-bottom: 50px;
+}
 
-© 2024 The Kala Culture Tattoos. All rights reserved.
+.section-heading small {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #777777;
+}
 
-⚙️ Admin
+.section-heading h2 {
+    font-size: clamp(35px,5vw,55px);
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.section-heading p {
+    color: #666666;
+    margin-top: 15px;
+    max-width: 650px;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+    background: #111111;
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.stat {
+    padding: 20px;
+}
+
+.stat h3 {
+    font-size: 38px;
+}
+
+.stat p {
+    color: #bbbbbb;
+}
+
+/* ================= SERVICES ================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.service {
+    border: 1px solid #dddddd;
+    padding: 30px;
+    min-height: 220px;
+    transition: 0.25s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    border-color: #111111;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.service-number {
+    font-size: 13px;
+    color: #888888;
+    font-weight: bold;
+}
+
+.service h3 {
+    margin: 25px 0 12px;
+    font-size: 22px;
+}
+
+.service p {
+    color: #666666;
+}
+
+/* ================= PROCESS ================= */
+
+.process {
+    background: #f5f5f5;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.process-card {
+    background: white;
+    padding: 30px;
+}
+
+.process-number {
+    font-size: 45px;
+    font-weight: 900;
+    color: #dddddd;
+}
+
+.process-card h3 {
+    margin: 15px 0;
+}
+
+.process-card p {
+    color: #666666;
+}
+
+/* ================= ARTIST ================= */
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.artist-photo {
+    min-height: 500px;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #777777;
+    font-weight: bold;
+}
+
+.artist-photo img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.artist-content h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin: 15px 0 20px;
+}
+
+.artist-content p {
+    color: #666666;
+    margin-bottom: 18px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery {
+    background: #111111;
+    color: white;
+}
+
+.gallery .section-heading p {
+    color: #aaaaaa;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.gallery-card {
+    height: 350px;
+    background: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #888888;
+    overflow: hidden;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-card span {
+    font-size: 14px;
+}
+
+/* ================= REVIEWS ================= */
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.review {
+    border: 1px solid #dddddd;
+    padding: 30px;
+}
+
+.stars {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.review p {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.review strong {
+    display: block;
+}
+
+/* ================= ACADEMY ================= */
+
+.academy {
+    background: #f5f5f5;
+}
+
+.academy-box {
+    background: #111111;
+    color: white;
+    padding: 55px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.academy-box h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.academy-box p {
+    color: #bbbbbb;
+}
+
+.academy-list {
+    list-style: none;
+}
+
+.academy-list li {
+    border-bottom: 1px solid #444444;
+    padding: 12px 0;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 15px 0 25px;
+}
+
+.contact-item {
+    margin: 22px 0;
+}
+
+.contact-item small {
+    display: block;
+    color: #888888;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-box {
+    background: #f5f5f5;
+    padding: 35px;
+}
+
+.contact-box h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111111;
+    color: white;
+    padding: 50px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #999999;
+    max-width: 450px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+    display: block;
+    color: #999999;
+    margin: 8px 0;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    color: #777777;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    background: #111111;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+.whatsapp:hover {
+    background: #333333;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 25px;
+        flex-direction: column;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .stats-grid,
+    .services-grid,
+    .process-grid,
+    .gallery-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .artist-grid,
+    .contact-grid,
+    .academy-box {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .stats-grid,
+    .services-grid,
+    .process-grid,
+    .gallery-grid,
+    .reviews-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-photo,
+    .artist-photo img {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    .academy-box {
+        padding: 30px;
+    }
+
+    .academy-box h2,
+    .contact-info h2,
+    .artist-content h2 {
+        font-size: 38px;
+    }
+
+    .whatsapp {
+        right: 12px;
+        bottom: 12px;
+        padding: 12px 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            KALA <span>CULTURE</span>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#process" onclick="closeMenu()">Process</a>
+            <a href="#artist" onclick="closeMenu()">Artist</a>
+            <a href="#gallery" onclick="closeMenu()">Gallery</a>
+            <a href="#reviews" onclick="closeMenu()">Reviews</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                VADODARA'S PROFESSIONAL TATTOO STUDIO
+            </div>
+
+            <h1>
+                Your Story.<br>
+                <span>Ink It.</span>
+            </h1>
+
+            <p>
+                Custom tattoos created with precision, creativity and
+                professional hygiene standards. From realistic portraits
+                to fine-line designs, we turn your ideas into permanent art.
+            </p>
+
+            <div class="buttons">
+                <a
+                    class="btn btn-dark"
+                    href="https://wa.me/919157714414?text=Hi%20Kala%20Culture!%20I%20want%20to%20book%20a%20tattoo%20appointment."
+                    target="_blank">
+                    Book Appointment
+                </a>
+
+                <a class="btn btn-light" href="#gallery">
+                    View Our Work
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats">
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Tattoos Created</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Hygiene Focus</p>
+            </div>
+
+            <div class="stat">
+                <h3>5★</h3>
+                <p>Client Experience</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <small>WHAT WE DO</small>
+            <h2>Our Tattoo Services</h2>
+            <p>
+                Professional tattoo services designed around your idea,
+                style and personality.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service">
+                <span class="service-number">01</span>
+                <h3>Realistic Portrait Tattoos</h3>
+                <p>
+                    Detailed portrait tattoos with realistic shading,
+                    proportions and fine finishing.
+                </p>
+            </div>
+
+            <div class="service">
+                <span class="service-number">02</span>
+                <h3>Custom Tattoo Designs</h3>
+                <p>
+                    Completely customized artwork created around your
+                    story, concept and preferred placement.
+                </p>
+            </div>
+
+            <div class="service">
+                <span class="service-number">03</span>
+                <h3>Fine Line & Minimal Tattoos</h3>
+                <p>
+                    Clean, delicate and elegant tattoos for a subtle
+                    and timeless look.
+                </p>
+            </div>
+
+            <div class="service">
+                <span class="service-number">04</span>
+                <h3>Name & Signature Tattoos</h3>
+                <p>
+                    Personalized lettering, names and signatures with
+                    custom typography.
+                </p>
+            </div>
+
+            <div class="service">
+                <span class="service-number">05</span>
+                <h3>Religious Tattoos</h3>
+                <p>
+                    Meaningful spiritual and religious tattoo designs
+                    created with care and precision.
+                </p>
+            </div>
+
+            <div class="service">
+                <span class="service-number">06</span>
+                <h3>Couple & Matching Tattoos</h3>
+                <p>
+                    Matching and connected designs created especially
+                    for couples and loved ones.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process" id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <small>HOW IT WORKS</small>
+            <h2>The Tattoo Process</h2>
+            <p>
+                From your first idea to the finished tattoo.
+            </p>
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <div class="process-number">01</div>
+                <h3>Consultation</h3>
+                <p>
+                    Discuss your idea, placement, size and design
+                    preferences with our artist.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">02</div>
+                <h3>Design</h3>
+                <p>
+                    Your tattoo concept is customized and prepared
+                    according to your requirements.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">03</div>
+                <h3>Inking</h3>
+                <p>
+                    Your tattoo is professionally executed using
+                    hygienic equipment and premium tattoo supplies.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">04</div>
+                <h3>Aftercare</h3>
+                <p>
+                    You'll receive professional aftercare guidance
+                    to help your tattoo heal properly.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ARTIST -->
+
+<section id="artist">
+
+    <div class="container">
+
+        <div class="artist-grid">
+
+            <div class="artist-photo">
+                <div>
+                    <div style="font-size:55px;">🎨</div>
+                    <p>Jaimin Parmar</p>
+                    <small>Professional Tattoo Artist</small>
+                </div>
+            </div>
+
+            <div class="artist-content">
+
+                <small>THE ARTIST</small>
+
+                <h2>
+                    Meet Jaimin Parmar
+                </h2>
+
+                <p>
+                    With 10+ years of experience in tattoo artistry,
+                    Jaimin specializes in creating detailed custom
+                    tattoos designed specifically for every client.
+                </p>
+
+                <p>
+                    Every tattoo is approached with attention to
+                    detail, hygiene, placement and long-term quality.
+                </p>
+
+                <p>
+                    Whether you're getting your first tattoo or adding
+                    another piece to your collection, the goal is to
+                    create artwork that feels personal to you.
+                </p>
+
+                <a
+                    href="https://wa.me/919157714414?text=Hi%20Jaimin!%20I%20want%20to%20discuss%20a%20tattoo%20design."
+                    target="_blank"
+                    class="btn btn-dark">
+                    Talk About Your Tattoo
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <small>OUR WORK</small>
+            <h2>Tattoo Gallery</h2>
+            <p>
+                A selection of tattoo styles created at The Kala Culture.
+            </p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <span>Portrait Tattoo</span>
+            </div>
+
+            <div class="gallery-card">
+                <span>Fine Line Tattoo</span>
+            </div>
+
+            <div class="gallery-card">
+                <span>Realistic Tattoo</span>
+            </div>
+
+            <div class="gallery-card">
+                <span>Sleeve Tattoo</span>
+            </div>
+
+            <div class="gallery-card">
+                <span>Custom Tattoo</span>
+            </div>
+
+            <div class="gallery-card">
+                <span>Religious Tattoo</span>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:35px;">
+
+            <a
+                href="https://www.instagram.com/thekalaculturetattoos/"
+                target="_blank"
+                class="btn"
+                style="border-color:white;color:white;">
+                See More On Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section id="reviews">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <small>CLIENT EXPERIENCES</small>
+            <h2>What Our Clients Say</h2>
+        </div>
+
+        <div class="reviews-grid">
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    “I recently got a sleeve tattoo done at Kala Culture
+                    Tattoo Studio, and I couldn't be happier with the
+                    experience. The artist was incredibly professional
+                    and took time to understand my vision.”
+                </p>
+
+                <strong>Ujjwal Panchal</strong>
+                <span>Vadodara</span>
+    
