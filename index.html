@@ -1,557 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Kala Culture - Best Tattoo Studio in Vadodara. Custom tattoos, portrait tattoos, fine line tattoos, realism tattoos with strict hygiene standards.">
-    <title>The Kala Culture - Best Tattoo Studio in Vadodara</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script> <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; }
-        .image-container { position: relative; width: 100%; height: 100%; overflow: hidden; background: linear-gradient(135deg, #1f2937 0%, #111827 100%); }
-        .image-container img { width: 100%; height: 100%; object-fit: cover; }
-    </style>
-</head>
-<body class="bg-black text-white">
-    <div id="root"></div>
+') 12 2, auto; } a, button { cursor: url('data:image/svg+xml;utf8,') 12 2, pointer; } /* Floating Buttons */ .floating-btn-whatsapp { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 32px; cursor: pointer; z-index: 40; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); text-decoration: none; animation: float 3s ease-in-out infinite; border: 3px solid white; } .floating-btn-call { position: fixed; bottom: 110px; right: 30px; width: 60px; height: 60px; background: #1a1a1a; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; cursor: pointer; z-index: 40; box-shadow: 0 4px 15px rgba(26, 26, 26, 0.4); text-decoration: none; animation: float 3s ease-in-out infinite; animation-delay: 0.2s; border: 3px solid white; } .floating-btn-whatsapp:hover, .floating-btn-call:hover { transform: scale(1.15); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); } @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } } /* Header */ header { background: white; padding: 20px 40px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 8px rgba(0,0,0,0.08); } .header-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; line-height: 1; } .logo-main { color: #1a1a1a; } .logo-sub { font-size: 11px; color: #888; letter-spacing: 1.5px; margin-top: 4px; font-weight: 600; } nav { display: flex; gap: 40px; list-style: none; } nav a { text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 14px; transition: color 0.3s; position: relative; } nav a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #1a1a1a; transition: width 0.3s; } nav a:hover::after { width: 100%; } @media (max-width: 768px) { nav { display: none; } header { padding: 15px 20px; } } /* Offer Banner - Scrolling */ .offer-banner { background: #1a1a1a; color: white; padding: 16px 20px; overflow: hidden; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; } .offer-scroll { display: flex; gap: 80px; animation: scroll 20s linear infinite; white-space: nowrap; } .offer-item { display: flex; align-items: center; gap: 6px; } @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } } .offer-scroll:hover { animation-play-state: paused; } /* Hero Section */ .hero { background: linear-gradient(rgba(26, 26, 26, 0.65), rgba(26, 26, 26, 0.65)), url('data:image/svg+xml;utf8,'); background-size: cover; background-position: center; color: white; padding: 120px 40px; text-align: center; position: relative; min-height: 600px; display: flex; align-items: center; justify-content: center; } .hero-content { max-width: 900px; z-index: 2; } .hero h1 { font-size: 72px; font-weight: 800; margin-bottom: 20px; line-height: 1.2; letter-spacing: -1px; animation: fadeInUp 0.8s ease-out; } .hero p { font-size: 20px; color: #e0e0e0; margin-bottom: 40px; animation: fadeInUp 0.8s ease-out 0.2s both; font-weight: 500; } .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 0.8s ease-out 0.4s both; } .btn { padding: 16px 40px; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; text-decoration: none; transition: all 0.3s; display: inline-block; font-family: 'Sora', sans-serif; } .btn-book { background: white; color: #1a1a1a; } .btn-book:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(255,255,255,0.2); } .btn-explore { background: transparent; color: white; border: 2px solid white; } .btn-explore:hover { background: white; color: #1a1a1a; } @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } } /* Stats Section - Horizontal */ .stats-section { background: white; padding: 80px 40px; margin-top: -60px; position: relative; z-index: 3; } .stats-grid { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; } .stat-item { text-align: center; flex: 1; min-width: 150px; } .stat-number { font-size: 56px; font-weight: 800; color: #1a1a1a; margin-bottom: 10px; line-height: 1; letter-spacing: -1px; font-family: 'Sora', sans-serif; } .stat-plus { font-size: 44px; margin-left: 2px; } .stat-label { font-size: 14px; color: #666; font-weight: 600; letter-spacing: 0.3px; } /* Features Grid */ section { padding: 80px 40px; max-width: 1400px; margin: 0 auto; } .section-title { font-size: 48px; font-weight: 800; text-align: center; margin-bottom: 60px; letter-spacing: -1px; font-family: 'Sora', sans-serif; } .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; } .feature-card { background: #f9f9f9; padding: 40px; border-radius: 12px; text-align: center; border: 1px solid #e5e5e5; transition: all 0.3s; } .feature-card:hover { background: #f0f0f0; border-color: #1a1a1a; transform: translateY(-5px); } .feature-icon { font-size: 48px; margin-bottom: 20px; } .feature-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .feature-card p { font-size: 14px; color: #666; line-height: 1.6; font-weight: 500; } /* Carousel */ .carousel-wrapper { background: white; } .carousel-items { display: flex; gap: 30px; overflow-x: auto; padding: 20px 0; scroll-behavior: smooth; } .carousel-item { min-width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: #f9f9f9; padding: 40px; border-radius: 12px; } .carousel-image { width: 100%; height: 350px; background: #e5e5e5; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px; } .carousel-content h3 { font-size: 24px; font-weight: 700; margin-bottom: 15px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .carousel-content p { font-size: 15px; color: #666; line-height: 1.7; margin-bottom: 15px; font-weight: 500; } .carousel-rating { color: #1a1a1a; font-weight: 700; margin: 15px 0; } /* School Section */ .school-section { background: #f5f5f5; border-radius: 12px; padding: 60px; text-align: center; } .school-section h2 { font-size: 32px; font-weight: 800; margin-bottom: 15px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .school-number { font-size: 72px; font-weight: 800; color: #1a1a1a; margin: 30px 0; letter-spacing: -1px; font-family: 'Sora', sans-serif; } .school-section p { font-size: 16px; color: #666; margin-bottom: 30px; font-weight: 500; } /* Contact Section */ .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; } .map-container { border-radius: 12px; overflow: hidden; height: 450px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); } .map-container iframe { width: 100%; height: 100%; border: none; } .form-box { background: #f9f9f9; padding: 40px; border-radius: 12px; border: 1px solid #e5e5e5; } .form-box h3 { font-size: 24px; font-weight: 700; margin-bottom: 30px; letter-spacing: -0.3px; font-family: 'Sora', sans-serif; } .form-box input, .form-box textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 2px solid #e5e5e5; border-radius: 8px; font-size: 14px; font-family: 'Sora', sans-serif; transition: border-color 0.3s; font-weight: 500; } .form-box input:focus, .form-box textarea:focus { outline: none; border-color: #1a1a1a; } .form-box button { width: 100%; background: #1a1a1a; color: white; padding: 16px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: 'Sora', sans-serif; font-size: 15px; } .form-box button:hover { background: #333; transform: translateY(-2px); } .contact-info { margin-top: 30px; padding-top: 30px; border-top: 2px solid #e5e5e5; text-align: center; } .contact-info p { color: #666; margin-bottom: 12px; font-size: 14px; font-weight: 500; } .contact-info p strong { color: #1a1a1a; font-weight: 700; } /* Footer */ footer { background: #1a1a1a; color: white; padding: 60px 40px 20px; font-family: 'Sora', sans-serif; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; } .footer-section h3 { font-weight: 700; margin-bottom: 20px; letter-spacing: -0.3px; font-size: 16px; } .footer-section a { color: #d0d0d0; text-decoration: none; font-size: 14px; transition: color 0.3s; display: block; margin-bottom: 10px; font-weight: 500; } .footer-section a:hover { color: white; } .footer-bottom { text-align: center; border-top: 1px solid #333; padding-top: 20px; color: #888; font-size: 13px; } @media (max-width: 768px) { .hero { padding: 60px 20px; min-height: 400px; } .hero h1 { font-size: 40px; } .hero p { font-size: 16px; } .contact-grid { grid-template-columns: 1fr; } .carousel-item { grid-template-columns: 1fr; } .hero-buttons { flex-direction: column; } .btn { width: 100%; } section { padding: 40px 20px; } .section-title { font-size: 32px; } .stats-grid { gap: 30px; } }
+The Kala Culture
+TATTOO STUDIO
+Home Services Process Gallery School Contact Instagram
+🎯 UPTO 30% OFF
+📅 5+ YEARS EXPERIENCE
+👥 500+ CUSTOMERS
+⭐ 5★ RATING
+🛡️ 100% SAFE & HYGIENIC
+💰 ₹399 PER SQ INCH
+🎯 UPTO 30% OFF
+📅 5+ YEARS EXPERIENCE
+👥 500+ CUSTOMERS
+⭐ 5★ RATING
+🛡️ 100% SAFE & HYGIENIC
+💰 ₹399 PER SQ INCH
+Best Tattoo Studio
+in Vadodara
+Premium tattoos with precision & artistry
 
-    <script type="text/babel">
-        const { useState, useEffect } = React;
+Book Now Explore Services
+5+
+Years Experience
+500+
+Happy Customers
+5★
+Google Rating
+100%
+Safe & Hygienic
+Our Specialties
+🎨
+Custom Designs
+Unique tattoos designed specifically for you
 
-        function TattooStudioApp() {
-            const [menuOpen, setMenuOpen] = useState(false);
-            const [adminMode, setAdminMode] = useState(false);
-            const [images, setImages] = useState({});
+👁️
+Realism Tattoos
+Hyper-realistic portraits and detailed artwork
 
-            // Load images from local storage on mount
-            useEffect(() => {
-                const saved = localStorage.getItem('tattooImages');
-                if (saved) {
-                    setImages(JSON.parse(saved));
-                }
-            }, []);
+✏️
+Fine Line Work
+Delicate and elegant minimalist designs
 
-            // Save images to local storage
-            const saveImage = (key, url) => {
-                const updated = { ...images, [key]: url };
-                setImages(updated);
-                localStorage.setItem('tattooImages', JSON.stringify(updated));
-                alert(`✅ Image saved! Refresh the page to see changes.`);
-            };
+🧵
+Sleeve Tattoos
+Complete full or half sleeve masterpieces
 
-            const handleImageUpload = (key, e) => {
-                const file = e.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = (event) => {
-                        saveImage(key, event.target.result);
-                    };
-                    reader.readAsDataURL(file);
-                }
-            };
+💫
+Religious Tattoos
+Spiritual designs with cultural significance
 
-            const studioInfo = {
-                name: "The Kala Culture",
-                tagline: "Best Tattoo Studio in Vadodara",
-                artist: "Jaimin Parmar",
-                experience: "10+ Years of Experience",
-                address: "102, Neelkanth Gold Complex, Vasna - Bhayli Main Rd, Saiyed Vasna, Vadodara, Gujarat 390020",
-                phone: "+91 9157714414",
-                email: "thekalaculture0@gmail.com",
-                website: "thekalaculturetattoos.in",
-                instagram: "@thekalaaculturetattoos",
-            };
+💑
+Matching Tattoos
+Couple designs that complement perfectly
 
-            const services = [
-                { title: "Realistic Portrait Tattoos", description: "Hyper-realistic portrait designs with exceptional detail and precision" },
-                { title: "Custom Tattoo Designs", description: "Personalized designs tailored to your vision with professional consultation" },
-                { title: "Fine Line & Minimal Tattoos", description: "Delicate, elegant minimalist designs for subtle self-expression" },
-                { title: "Name & Signature Tattoos", description: "Personalized name and signature tattoos with custom lettering" },
-                { title: "Religious Tattoos", description: "Spiritual and religious designs with cultural significance and precision" },
-                { title: "Couple & Matching Tattoos", description: "Connected designs for couples that complement each other perfectly" }
-            ];
+Client Stories
+📸 Client Photo
+Raj's Sleeve Tattoo
+Got an amazing full sleeve done. Jaimin's precision and creativity are truly unmatched. The tattoo turned out exactly as I envisioned it!
 
-            const testimonials = [
-                { text: "I recently got a sleeve tattoo done at Kala Culture Tattoo Studio, and I couldn't be happier with the experience. The artist was incredibly professional and took time to understand my vision. Highly recommend!", author: "Ujjwal Panchal", date: "Recently", location: "Vadodara" },
-                { text: "Best tattoo studio in Vadodara! Professional artists, clean environment, and amazing customer service. My tattoo looks incredible and healed perfectly.", author: "Client Review", date: "Recent", location: "Vadodara" },
-                { text: "Highly recommended! The team is skilled, hygienic, and very friendly. They made my first tattoo experience stress-free and amazing.", author: "Satisfied Client", date: "Recent", location: "Vadodara" }
-            ];
+⭐⭐⭐⭐⭐ Amazing Experience
+Raj P. • Vadodara
 
-            const processSteps = [
-                { num: "01", title: "Consultation", desc: "Discuss your tattoo idea, placement, and design preferences with our expert artist" },
-                { num: "02", title: "Design", desc: "Custom design created and sized to scale for your approval" },
-                { num: "03", title: "Inking", desc: "Professional execution with sterilized equipment and premium inks" },
-                { num: "04", title: "Aftercare", desc: "Complete aftercare kit and detailed healing instructions provided" }
-            ];
+📸 Client Photo
+Priya's Portrait Tattoo
+The realism in my portrait tattoo is absolutely incredible! Every single detail is perfect. Professional, hygienic, and the best experience ever.
 
-            const galleryItems = [
-                { id: 'gallery1', type: "Portrait Tattoo" },
-                { id: 'gallery2', type: "Fine Line Design" },
-                { id: 'gallery3', type: "Realistic Tattoo" },
-                { id: 'gallery4', type: "Sleeve Work" },
-                { id: 'gallery5', type: "Custom Design" },
-                { id: 'gallery6', type: "Religious Tattoo" }
-            ];
+⭐⭐⭐⭐⭐ Highly Recommended
+Priya S. • Vadodara
 
-            const ImageUploadModal = ({ itemKey, itemName, onClose }) => {
-                return (
-                    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-                        <div className="bg-gray-900 p-8 rounded-lg max-w-md w-full border border-gray-800">
-                            <h3 className="text-2xl font-bold mb-6">Upload Image: {itemName}</h3>
-                            
-                            <div className="mb-6">
-                                <label className="block mb-3 text-yellow-500 font-semibold">📤 Choose Image File:</label>
-                                <input 
-                                    type="file" 
-                                    accept="image/*"
-                                    onChange={(e) => {
-                                        handleImageUpload(itemKey, e);
-                                        onClose();
-                                    }}
-                                    className="w-full"
-                                />
-                            </div>
+📸 Client Photo
+Aditya's Fine Line Design
+Absolutely stunning fine line work. The attention to detail and clean execution is remarkable. Will definitely come back for more tattoos!
 
-                            <div className="bg-black p-4 rounded mb-6 border border-gray-700">
-                                <p className="text-gray-400 text-sm mb-3"><strong>📝 OR Paste Image URL:</strong></p>
-                                <input 
-                                    type="text"
-                                    placeholder="https://example.com/image.jpg"
-                                    onKeyPress={(e) => {
-                                        if (e.key === 'Enter' && e.target.value) {
-                                            saveImage(itemKey, e.target.value);
-                                            onClose();
-                                        }
-                                    }}
-                                    className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white text-sm"
-                                />
-                                <p className="text-gray-500 text-xs mt-2">💡 Tip: Copy from Instagram or Google Photos</p>
-                            </div>
+⭐⭐⭐⭐⭐ Outstanding Quality
+Aditya M. • Vadodara
 
-                            <button 
-                                onClick={onClose}
-                                className="w-full bg-gray-800 hover:bg-gray-700 text-white py-2 rounded font-semibold transition"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                );
-            };
+How It Works
+01
+Consultation
+Share your tattoo vision and discuss design preferences
 
-            const [uploadModal, setUploadModal] = useState(null);
+02
+Design
+Custom design created and sized perfectly for your body
 
-            return (
-                <div className="min-h-screen bg-black text-white">
-                    {/* Admin Mode Toggle (Hidden) */}
-                    <button 
-                        onClick={() => setAdminMode(!adminMode)}
-                        className="fixed bottom-4 right-4 z-40 bg-gray-800/50 text-white px-3 py-1 rounded text-xs hover:bg-gray-700 transition"
-                    >
-                        {adminMode ? "🔒 Hide Admin" : "⚙️ Admin"}
-                    </button>
+03
+Precision Inking
+Professional execution with sterile equipment
 
-                    {/* Admin Panel */}
-                    {adminMode && (
-                        <div className="fixed top-20 right-4 z-40 bg-gray-900 border-2 border-yellow-500 rounded-lg p-6 max-w-sm max-h-96 overflow-y-auto">
-                            <h2 className="text-xl font-bold mb-4 text-yellow-500">📸 Manage Images</h2>
-                            <p className="text-gray-400 text-sm mb-4">Click on any image below to upload or paste URL</p>
-                            
-                            <div className="space-y-2">
-                                {/* Artist Image */}
-                                <button
-                                    onClick={() => setUploadModal({ key: 'artist', name: 'Artist Photo (Jaimin)' })}
-                                    className="w-full text-left bg-gray-800 hover:bg-gray-700 p-3 rounded transition text-sm"
-                                >
-                                    👤 Artist Photo
-                                </button>
+04
+Aftercare
+Complete kit and instructions for perfect healing
 
-                                {/* Gallery Images */}
-                                {galleryItems.map((item) => (
-                                    <button
-                                        key={item.id}
-                                        onClick={() => setUploadModal({ key: item.id, name: item.type })}
-                                        className="w-full text-left bg-gray-800 hover:bg-gray-700 p-3 rounded transition text-sm"
-                                    >
-                                        📸 {item.type}
-                                    </button>
-                                ))}
-                            </div>
+Tattoo Training Academy
+Professional tattoo training program
 
-                            <div className="mt-6 p-4 bg-black rounded border border-gray-700">
-                                <p className="text-yellow-500 text-xs font-bold mb-2">💡 HOW TO GET IMAGES:</p>
-                                <ul className="text-gray-400 text-xs space-y-2">
-                                    <li>✅ <strong>Instagram:</strong> Right-click image → Copy URL</li>
-                                    <li>✅ <strong>Upload:</strong> Click button and select from phone/computer</li>
-                                    <li>✅ <strong>Google Photos:</strong> Share link from "Get link"</li>
-                                </ul>
-                            </div>
-                        </div>
-                    )}
+10+
+Trained Professional Students
 
-                    {uploadModal && (
-                        <ImageUploadModal 
-                            itemKey={uploadModal.key}
-                            itemName={uploadModal.name}
-                            onClose={() => setUploadModal(null)}
-                        />
-                    )}
+Enroll Now
+Get In Touch
 
-                    {/* Navigation */}
-                    <nav className="fixed w-full bg-black/98 backdrop-blur z-50 border-b border-gray-800">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                            <div className="flex justify-between items-center h-16">
-                                <div className="text-2xl font-bold tracking-wider">KALA CULTURE</div>
-                                
-                                <div className="hidden md:flex gap-8">
-                                    <a href="#home" className="hover:text-yellow-500 transition text-sm font-medium">Home</a>
-                                    <a href="#services" className="hover:text-yellow-500 transition text-sm font-medium">Services</a>
-                                    <a href="#process" className="hover:text-yellow-500 transition text-sm font-medium">Process</a>
-                                    <a href="#artist" className="hover:text-yellow-500 transition text-sm font-medium">Artist</a>
-                                    <a href="#gallery" className="hover:text-yellow-500 transition text-sm font-medium">Gallery</a>
-                                    <a href="#contact" className="hover:text-yellow-500 transition text-sm font-medium">Contact</a>
-                                </div>
+Send us a Message
+Your Full Name
+ 
+Your Email
+ 
+Your Phone Number
+ 
+Tell us about your tattoo idea...
+ Send Inquiry
+📍 Location
+102, Neelkanth Gold Complex
+Vasna-Bhayli Rd, Vadodara
 
-                                <button className="md:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
-                                    {menuOpen ? "✕" : "☰"}
-                                </button>
-                            </div>
+📞 Phone
++91 9157714414
 
-                            {menuOpen && (
-                                <div className="md:hidden pb-4 flex flex-col gap-4 border-t border-gray-800 pt-4">
-                                    <a href="#home" className="hover:text-yellow-500">Home</a>
-                                    <a href="#services" className="hover:text-yellow-500">Services</a>
-                                    <a href="#process" className="hover:text-yellow-500">Process</a>
-                                    <a href="#artist" className="hover:text-yellow-500">Artist</a>
-                                    <a href="#gallery" className="hover:text-yellow-500">Gallery</a>
-                                    <a href="#contact" className="hover:text-yellow-500">Contact</a>
-                                </div>
-                            )}
-                        </div>
-                    </nav>
+📧 Email
+thekalaculture0@gmail.com
 
-                    {/* Hero Section */}
-                    <section id="home" className="pt-32 pb-20 px-4 bg-gradient-to-b from-gray-900 via-gray-950 to-black text-center">
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
-                            Best Tattoo Studio <span className="text-yellow-500">in Vadodara</span>
-                        </h1>
-                        <p className="text-lg md:text-xl text-gray-300 mb-4">
-                            {studioInfo.tagline}
-                        </p>
-                        <p className="text-gray-400 mb-10 max-w-2xl mx-auto text-lg">
-                            Award-winning custom tattoos with strict hygiene standards, professional artists, and premium quality. Get your perfect tattoo at The Kala Culture.
-                        </p>
-                        <div className="flex gap-4 justify-center flex-wrap">
-                            <a 
-                                href={`https://wa.me/919157714414?text=Hi%20Kala%20Culture!%20I'm%20interested%20in%20getting%20a%20tattoo.%20Can%20you%20help%20me?`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-yellow-500 text-black px-8 py-3 rounded font-bold hover:bg-yellow-400 transition text-lg"
-                            >
-                                📞 Book Appointment
-                            </a>
-                            <a 
-                                href="#services"
-                                className="border-2 border-yellow-500 text-yellow-500 px-8 py-3 rounded font-bold hover:bg-yellow-500 hover:text-black transition text-lg"
-                            >
-                                View Services
-                            </a>
-                        </div>
-                    </section>
+The Kala Culture Tattoos
+Premium tattoo studio with 5+ years of expertise and 500+ satisfied customers.
 
-                    {/* Services Section */}
-                    <section id="services" className="py-20 px-4 bg-black">
-                        <div className="max-w-7xl mx-auto">
-                            <div className="text-center mb-16">
-                                <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
-                                <p className="text-gray-400 text-lg">Professional tattoo services for every style</p>
-                            </div>
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {services.map((service, idx) => (
-                                    <div key={idx} className="bg-gradient-to-br from-gray-900 to-gray-950 p-8 rounded-lg hover:from-gray-800 hover:to-gray-900 transition border border-gray-800">
-                                        <h3 className="text-xl font-bold mb-3 text-yellow-500">{service.title}</h3>
-                                        <p className="text-gray-400 leading-relaxed">{service.description}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </section>
+Quick Links
+Home Services Gallery School Contact
+Follow Us
+Instagram WhatsApp Google Maps
+Hours
+Mon - Sun: 10 AM - 8 PM
+Emergency: 24/7 Available
 
-                    {/* Process Section */}
-                    <section id="process" className="py-20 px-4 bg-gray-900">
-                        <div className="max-w-7xl mx-auto">
-                            <div className="text-center mb-16">
-                                <h2 className="text-4xl md:text-5xl font-bold mb-4">The Tattoo Process</h2>
-                                <p className="text-gray-400 text-lg">From consultation to healed masterpiece</p>
-                            </div>
-                            <div className="grid md:grid-cols-4 gap-8">
-                                {processSteps.map((step, idx) => (
-                                    <div key={idx} className="text-center">
-                                        <div className="text-6xl font-bold text-yellow-500 mb-4">{step.num}</div>
-                                        <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                                        <p className="text-gray-400 leading-relaxed text-sm">{step.desc}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Artist Section */}
-                    <section id="artist" className="py-20 px-4 bg-black">
-                        <div className="max-w-7xl mx-auto">
-                            <div className="grid md:grid-cols-2 gap-12 items-center">
-                                <div>
-                                    <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg h-96 flex items-center justify-center border-2 border-gray-700 overflow-hidden cursor-pointer hover:border-yellow-500 transition relative group image-container">
-                                        {images.artist ? (
-                                            <>
-                                                <img src={images.artist} alt="Jaimin Parmar" />
-                                                {adminMode && (
-                                                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                                                        <button 
-                                                            onClick={() => setUploadModal({ key: 'artist', name: 'Artist Photo' })}
-                                                            className="bg-yellow-500 text-black px-4 py-2 rounded font-bold"
-                                                        >
-                                                            Change Image
-                                                        </button>
-                                                    </div>
-                                                )}
-                                            </>
-                                        ) : (
-                                            <div className="text-center cursor-pointer" onClick={() => adminMode && setUploadModal({ key: 'artist', name: 'Artist Photo' })}>
-                                                <div className="text-6xl mb-4">🎨</div>
-                                                <p className="text-gray-400 font-semibold">{adminMode ? "Click to add Artist Photo" : "Artist Photo"}</p>
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2 className="text-4xl md:text-5xl font-bold mb-6">Meet {studioInfo.artist}</h2>
-                                    <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-                                        With extensive experience in tattoo artistry and a deep understanding of skin anatomy, our lead artist creates tattoos that are visually striking and technically sound. Every design is custom-crafted to complement your body's natural flow.
-                                    </p>
-                                    <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                                        Each piece is executed with precision using sterilized equipment and premium-grade inks. Our strict hygiene standards ensure safe, beautiful tattoos that heal perfectly and remain timeless.
-                                    </p>
-                                    <div className="text-3xl font-bold text-yellow-500 mb-4">{studioInfo.experience}</div>
-                                    <p className="text-gray-500 text-sm">Professional | Hygienic | Award-Winning</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Gallery Section */}
-                    <section id="gallery" className="py-20 px-4 bg-gray-900">
-                        <div className="max-w-7xl mx-auto">
-                            <div className="text-center mb-16">
-                                <h2 className="text-4xl md:text-5xl font-bold mb-4">Portfolio Gallery</h2>
-                                <p className="text-gray-400 text-lg">Our award-winning tattoo work</p>
-                            </div>
-                            <div className="grid md:grid-cols-3 gap-6 mb-12">
-                                {galleryItems.map((item) => (
-                                    <div key={item.id} className="bg-gray-800 rounded-lg h-80 flex items-center justify-center border border-gray-700 overflow-hidden cursor-pointer hover:border-yellow-500 transition relative group image-container">
-                                        {images[item.id] ? (
-                                            <>
-                                                <img src={images[item.id]} alt={item.type} />
-                                                {adminMode && (
-                                                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                                                        <button 
-                                                            onClick={() => setUploadModal({ key: item.id, name: item.type })}
-                                                            className="bg-yellow-500 text-black px-3 py-1 rounded font-bold text-sm"
-                                                        >
-                                                            Change
-                                                        </button>
-                                                    </div>
-                                                )}
-                                            </>
-                                        ) : (
-                                            <div className="text-center cursor-pointer" onClick={() => adminMode && setUploadModal({ key: item.id, name: item.type })}>
-                                                <div className="text-5xl mb-3">📸</div>
-                                                <p className="text-gray-300 font-semibold text-sm">{item.type}</p>
-                                                {adminMode && <p className="text-yellow-500 text-xs mt-2">Click to add</p>}
-                                            </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="text-center">
-                                <a href="https://instagram.com/thekalaaculturetattoos" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-8 py-3 rounded font-bold hover:from-yellow-400 hover:to-yellow-500 transition">
-                                    Follow @thekalaaculturetattoos
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Reviews Section */}
-                    <section className="py-20 px-4 bg-black">
-                        <div className="max-w-7xl mx-auto">
-                            <div className="text-center mb-16">
-                                <h2 className="text-4xl md:text-5xl font-bold mb-4">Client Reviews</h2>
-                                <p className="text-gray-400 text-lg">Trusted by hundreds of satisfied clients</p>
-                            </div>
-                            <div className="grid md:grid-cols-3 gap-8">
-                                {testimonials.map((testimonial, idx) => (
-                                    <div key={idx} className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-yellow-500/50 transition">
-                                        <div className="text-yellow-500 mb-4">★★★★★</div>
-                                        <p className="text-gray-300 mb-6 italic leading-relaxed">"{testimonial.text}"</p>
-                                        <div className="flex justify-between items-start pt-4 border-t border-gray-800">
-                                            <div>
-                                                <p className="font-bold">{testimonial.author}</p>
-                                                <p className="text-gray-500 text-sm">{testimonial.location}</p>
-                                            </div>
-                                            <p className="text-yellow-500 text-sm">{testimonial.date}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Contact Section */}
-                    <section id="contact" className="py-20 px-4 bg-gray-900">
-                        <div className="max-w-5xl mx-auto">
-                            <div className="text-center mb-16">
-                                <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
-                                <p className="text-gray-400 text-lg">Book your free consultation today</p>
-                            </div>
-                            
-                            <div className="grid md:grid-cols-2 gap-12">
-                                <div className="space-y-8">
-                                    <div className="flex gap-4">
-                                        <div className="text-yellow-500 text-2xl">📞</div>
-                                        <div>
-                                            <p className="text-gray-400 text-sm mb-1 font-semibold">Phone</p>
-                                            <a href="tel:+919157714414" className="text-xl font-bold hover:text-yellow-500 transition">
-                                                +91 9157714414
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex gap-4">
-                                        <div className="text-yellow-500 text-2xl">📧</div>
-                                        <div>
-                                            <p className="text-gray-400 text-sm mb-1 font-semibold">Email</p>
-                                            <a href="mailto:thekalaculture0@gmail.com" className="text-xl font-bold hover:text-yellow-500 transition">
-                                                thekalaculture0@gmail.com
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex gap-4">
-                                        <div className="text-yellow-500 text-2xl">📍</div>
-                                        <div>
-                                            <p className="text-gray-400 text-sm mb-1 font-semibold">Location</p>
-                                            <p className="text-lg font-bold leading-relaxed">{studioInfo.address}</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex gap-4">
-                                        <div className="text-yellow-500 text-2xl">💬</div>
-                                        <div>
-                                            <p className="text-gray-400 text-sm mb-1 font-semibold">WhatsApp</p>
-                                            <a href="https://wa.me/919157714414" target="_blank" rel="noopener noreferrer" className="text-xl font-bold hover:text-yellow-500 transition">
-                                                Chat Now
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex gap-4">
-                                        <div className="text-yellow-500 text-2xl">📱</div>
-                                        <div>
-                                            <p className="text-gray-400 text-sm mb-1 font-semibold">Instagram</p>
-                                            <a href="https://instagram.com/thekalaaculturetattoos" target="_blank" rel="noopener noreferrer" className="text-xl font-bold hover:text-yellow-500 transition">
-                                                @thekalaaculturetattoos
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <form className="space-y-4 bg-gray-800 p-8 rounded-lg border border-gray-700" onSubmit={(e) => {
-                                    e.preventDefault();
-                                    alert('✅ Thank you! We will contact you soon.');
-                                    e.target.reset();
-                                }}>
-                                    <input 
-                                        type="text" 
-                                        placeholder="Your Full Name" 
-                                        className="w-full bg-gray-900 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:border-yellow-500 outline-none transition"
-                                        required
-                                    />
-                                    <input 
-                                        type="tel" 
-                                        placeholder="Your Phone Number" 
-                                        className="w-full bg-gray-900 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:border-yellow-500 outline-none transition"
-                                        required
-                                    />
-                                    <input 
-                                        type="email" 
-                                        placeholder="Your Email" 
-                                        className="w-full bg-gray-900 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:border-yellow-500 outline-none transition"
-                                    />
-                                    <textarea 
-                                        placeholder="Tell us about your tattoo idea..." 
-                                        rows="4"
-                                        className="w-full bg-gray-900 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:border-yellow-500 outline-none transition"
-                                    />
-                                    <button 
-                                        type="submit"
-                                        className="w-full bg-yellow-500 text-black py-3 rounded font-bold hover:bg-yellow-400 transition text-lg"
-                                    >
-                                        Send Inquiry
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Footer */}
-                    <footer className="bg-black border-t border-gray-800 py-12 px-4">
-                        <div className="max-w-7xl mx-auto">
-                            <div className="grid md:grid-cols-4 gap-8 mb-8">
-                                <div>
-                                    <h3 className="text-xl font-bold mb-4">The Kala Culture</h3>
-                                    <p className="text-gray-400 text-sm">Best tattoo studio in Vadodara with strict hygiene and premium artistry.</p>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold mb-4">Quick Links</h4>
-                                    <ul className="space-y-2 text-gray-400 text-sm">
-                                        <li><a href="#services" className="hover:text-yellow-500">Services</a></li>
-                                        <li><a href="#artist" className="hover:text-yellow-500">Artist</a></li>
-                                        <li><a href="#gallery" className="hover:text-yellow-500">Gallery</a></li>
-                                        <li><a href="#contact" className="hover:text-yellow-500">Contact</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold mb-4">Follow Us</h4>
-                                    <ul className="space-y-2 text-gray-400 text-sm">
-                                        <li><a href="https://instagram.com/thekalaaculturetattoos" target="_blank" className="hover:text-yellow-500">Instagram</a></li>
-                                        <li><a href="https://wa.me/919157714414" target="_blank" className="hover:text-yellow-500">WhatsApp</a></li>
-                                        <li><a href="https://maps.app.goo.gl/zzibzD1SfPJFj7vJ7" target="_blank" className="hover:text-yellow-500">Google Maps</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold mb-4">Contact</h4>
-                                    <p className="text-gray-400 text-sm mb-2">+91 9157714414</p>
-                                    <p className="text-gray-400 text-sm">thekalaculture0@gmail.com</p>
-                                </div>
-                            </div>
-                            <div className="border-t border-gray-800 pt-8 text-center">
-                                <p className="text-gray-400 mb-2">© 2026 The Kala Culture. All rights reserved.</p>
-                                <p className="text-gray-500 text-sm">Best Tattoo Studio in Vadodara | Professional | Hygienic | Award-Winning</p>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-            );
-        }
-
-        ReactDOM.render(<TattooStudioApp />, document.getElementById('root'));
-    </script>
-</body>
-</html>
+© 2024 The Kala Culture Tattoos. All rights reserved.
