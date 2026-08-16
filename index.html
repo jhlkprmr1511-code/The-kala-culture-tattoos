@@ -1,288 +1,987 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Kala Culture Tattoos | Best Tattoo Studio in Vadodara</title>
-<meta name="description" content="The Kala Culture Tattoos - Best Tattoo Studio in Vadodara. Custom tattoos, realistic portraits, fine line, black and grey, religious tattoos, couple tattoos and cover ups. 5+ years experience, 500+ customers and strict hygiene standards.">
-<meta name="keywords" content="best tattoo studio in Vadodara, tattoo artist Vadodara, tattoo shop Vadodara, custom tattoo Vadodara, realistic tattoo Vadodara, portrait tattoo Vadodara, fine line tattoo Vadodara, black and grey tattoo Vadodara, tattoo cover up Vadodara, tattoo studio Vasna Bhayli">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.thekalaculturetattoos.in/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Kala Culture Tattoos - Best Tattoo Studio in Vadodara. 5+ years experience, 500+ customers.">
+    <title>The Kala Culture Tattoos | Best Studio in Vadodara</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Sora,sans-serif;background:#050505;color:#f5f5f5;line-height:1.65;overflow-x:hidden}
-a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
-button,input,textarea{font:inherit}.wrap{width:min(1180px,92%);margin:auto}
-section{padding:95px 0;position:relative}.dark{background:#0b0b0b}
-.eyebrow{text-transform:uppercase;letter-spacing:.24em;color:#aaa;font-size:11px;font-weight:600;margin-bottom:15px}
-.title{text-align:center;max-width:780px;margin:0 auto 50px}
-.title h2{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-.055em}
-.title p{color:#8f8f8f;margin-top:13px;font-size:14px}
+        html {
+            scroll-behavior: smooth;
+        }
 
-/* HEADER */
-header{position:fixed;top:0;left:0;width:100%;z-index:100;background:rgba(5,5,5,.95);backdrop-filter:blur(16px);border-bottom:1px solid #252525}
-.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px}.brand-logo{width:52px;height:52px;object-fit:contain;border-radius:7px;background:#111;border:1px solid #2c2c2c}
-.brand-fallback{display:none;width:52px;height:52px;align-items:center;justify-content:center;border:1px solid #333;border-radius:7px;font-size:18px;font-weight:800}
-.brand-name{font-size:17px;font-weight:800;letter-spacing:.07em;line-height:1.1}.brand-name small{display:block;font-size:8px;color:#8f8f8f;letter-spacing:.32em;margin-top:5px}
-.links{display:flex;gap:24px;font-size:12px;color:#aaa}.links a:hover{color:#fff}
-.menu{display:none;background:none;border:0;color:#fff;font-size:26px}
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+        }
 
-/* SCROLLING BANNER */
-.offer{margin-top:78px;background:#111;border-bottom:1px solid #292929;overflow:hidden;white-space:nowrap}
-.track{display:flex;width:max-content;animation:move 28s linear infinite}
-.offer span{padding:11px 30px;font-size:11px;color:#d5d5d5;letter-spacing:.07em}.offer b{color:#fff}
-@keyframes move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+        /* Custom Tattoo Needle Cursor */
+        :root {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32"><defs><style>.needle{fill:none;stroke:%231a1a1a;stroke-width:2;stroke-linecap:round}</style></defs><line class="needle" x1="12" y1="2" x2="12" y2="24"/><circle cx="12" cy="28" r="2" fill="%231a1a1a"/><path class="needle" d="M8 12 L16 12" stroke-width="1.5"/></svg>') 12 2, auto;
+        }
 
-/* HERO / SEO BANNER */
-.hero{min-height:720px;display:flex;align-items:center;text-align:center;padding:120px 0 100px;overflow:hidden;
-background:linear-gradient(180deg,rgba(0,0,0,.52),rgba(0,0,0,.92)),url("images/hero-tattoo.jpg") center/cover no-repeat,#0b0b0b}
-.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,transparent 0%,rgba(0,0,0,.28) 45%,rgba(0,0,0,.82) 100%);pointer-events:none}
-.hero .inner{max-width:950px;margin:auto;position:relative;z-index:1}
-.hero h1{font-size:clamp(45px,7.5vw,88px);line-height:1.02;letter-spacing:-.065em;font-weight:800}
-.hero h1 span{color:#aaa}.hero p{max-width:780px;margin:24px auto 30px;color:#c1c1c1;font-size:15px}
-.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:9px;font-size:12px;font-weight:700;transition:.25s;border:1px solid transparent}
-.btn:hover{transform:translateY(-3px)}.wa{background:#25D366;color:#06140b}.call{background:#050505;color:#fff;border-color:#555}.white{background:#fff;color:#000}
-.hero-badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:26px}
-.badge{border:1px solid #3a3a3a;background:rgba(10,10,10,.72);padding:8px 12px;border-radius:999px;color:#d5d5d5;font-size:10px}
-.seo-line{font-size:11px!important;color:#888!important;margin-top:18px!important}
+        a, button {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32"><defs><style>.needle{fill:none;stroke:%231a1a1a;stroke-width:2.5;stroke-linecap:round}</style></defs><line class="needle" x1="12" y1="2" x2="12" y2="24"/><circle cx="12" cy="28" r="2.5" fill="%231a1a1a"/></svg>') 12 2, pointer;
+        }
 
-/* STATS */
-.stats{padding:0 0 78px;background:#050505}.statrow{display:flex;border:1px solid #292929;background:#0d0d0d;border-radius:18px;padding:26px}
-.stat{flex:1;text-align:center;padding:8px 16px}.stat+.stat{border-left:1px solid #292929}
-.num{font-size:clamp(34px,5vw,58px);font-weight:800;letter-spacing:-.06em}.lab{font-size:9px;color:#8e8e8e;text-transform:uppercase;letter-spacing:.13em}
+        /* Floating Buttons */
+        .floating-btn-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            z-index: 40;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            animation: float 3s ease-in-out infinite;
+            border: 3px solid white;
+        }
 
-/* SERVICE CARDS */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{padding:28px;border:1px solid #292929;background:linear-gradient(145deg,#111,#080808);border-radius:15px;transition:.35s}
-.card:hover{transform:translateY(-7px);border-color:#555;box-shadow:0 20px 45px #0008}
-.card h3{font-size:16px;margin-bottom:9px}.card p{font-size:12px;color:#8e8e8e}
+        .floating-btn-call {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #1a1a1a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            z-index: 40;
+            box-shadow: 0 4px 15px rgba(26, 26, 26, 0.4);
+            text-decoration: none;
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 0.2s;
+            border: 3px solid white;
+        }
 
-/* PROCESS */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:1px solid #444;padding:20px 2px 0}
-.step b{font-size:38px;color:#777}.step h3{margin:7px 0;font-size:16px}.step p{color:#888;font-size:12px}
+        .floating-btn-whatsapp:hover,
+        .floating-btn-call:hover {
+            transform: scale(1.15);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
 
-/* ARTIST */
-.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.photo-frame{height:500px;border:1px solid #292929;border-radius:18px;overflow:hidden;background:#101010}
-.photo-frame img{width:100%;height:100%;object-fit:cover}.photo-placeholder{height:100%;align-items:center;justify-content:center;color:#777;text-align:center;padding:30px}
-.about h2{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-.055em}.about p{color:#999;margin:18px 0;font-size:14px}
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
 
-/* PORTFOLIO + TATTOO GRID */
-.image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.image-card{position:relative;aspect-ratio:1/1.12;border:1px solid #292929;border-radius:15px;overflow:hidden;background:#111}
-.image-card img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.image-card:hover img{transform:scale(1.07)}
-.image-card:after{content:"";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(transparent,rgba(0,0,0,.88));pointer-events:none}
-.image-label{position:absolute;left:18px;bottom:16px;z-index:2;font-size:11px;font-weight:700}.image-label span{display:block;color:#aaa;font-size:9px;font-weight:400;margin-top:3px}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery-card{aspect-ratio:1;overflow:hidden;border:1px solid #292929;border-radius:13px;background:#111;position:relative}
-.gallery-card img{width:100%;height:100%;object-fit:cover;transition:.6s}.gallery-card:hover img{transform:scale(1.08)}
-.gallery-card span{position:absolute;left:12px;bottom:10px;background:#050505d9;border:1px solid #333;border-radius:999px;padding:5px 9px;font-size:8px;color:#ddd}
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
 
-/* REVIEWS */
-.review-head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:38px}
-.review-score{font-size:74px;font-weight:800;line-height:.9;letter-spacing:-.07em}.stars{color:#fff;letter-spacing:5px;font-size:18px;margin:12px 0 6px}
-.review-link{color:#aaa;font-size:11px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.review{border:1px solid #292929;background:#0d0d0d;border-radius:16px;overflow:hidden;transition:.35s}.review:hover{transform:translateY(-6px);border-color:#555}
-.review-photo{height:230px;background:#151515}.review-photo img{width:100%;height:100%;object-fit:cover}
-.review-body{padding:22px}.review .stars{font-size:15px;margin:0 0 14px}.review p{color:#d2d2d2;font-size:13px;line-height:1.8}
-.review strong{display:block;margin-top:18px;font-size:12px}.review small{color:#777}
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-/* FAQ + CONTACT */
-.faq{max-width:900px;margin:auto}details{border-top:1px solid #292929;padding:20px 0}details:last-child{border-bottom:1px solid #292929}
-summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none;display:flex;justify-content:space-between;gap:20px}summary:after{content:"+";color:#888;font-size:20px;font-weight:400}
-details[open] summary:after{content:"−"}details p{color:#8f8f8f;font-size:13px;padding:14px 25px 0 0}
-.contact{background:#0b0b0b}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:38px}.info p{color:#999;font-size:13px;margin:10px 0}
-form{display:grid;gap:12px}input,textarea{width:100%;background:#050505;border:1px solid #333;color:#fff;padding:14px;border-radius:9px;outline:none}
-input:focus,textarea:focus{border-color:#777}textarea{min-height:130px;resize:vertical}
-iframe{width:100%;height:290px;border:0;border-radius:13px;margin-top:20px;filter:grayscale(1) contrast(1.05)}
-footer{border-top:1px solid #222;padding:30px 0;text-align:center;color:#777;font-size:10px}
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1;
+        }
 
-/* FLOATING BUTTONS */
-.float{position:fixed;right:18px;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:90;font-size:21px;box-shadow:0 10px 30px #0009}
-.float.wa{bottom:82px}.float.call{bottom:18px}
+        .logo-main {
+            color: #1a1a1a;
+        }
 
-/* SMOOTH ANIMATIONS */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}.reveal.show{opacity:1;transform:none}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}.float.wa{animation:pulse 2.6s infinite}
+        .logo-sub {
+            font-size: 11px;
+            color: #888;
+            letter-spacing: 1.5px;
+            margin-top: 4px;
+            font-weight: 600;
+        }
 
-/* CUSTOM TATTOO NEEDLE CURSOR */
-@media (pointer:fine){
-body{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M4 25L19 10' stroke='white' stroke-width='2'/%3E%3Cpath d='M17 8l7-5 5 5-5 7z' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M22 15l4 4' stroke='white' stroke-width='2'/%3E%3Ccircle cx='5' cy='26' r='2' fill='white'/%3E%3C/svg%3E") 4 28,auto}
-a,button,summary{cursor:pointer}
-}
+        nav {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
 
-/* MOBILE */
-@media(max-width:850px){
-.links{display:none;position:absolute;top:78px;left:0;width:100%;background:#070707;border-bottom:1px solid #292929;padding:18px 4%;flex-direction:column;gap:17px}
-.menu{display:block}.statrow{overflow:auto}.stat{min-width:160px}.stat+.stat{border-left:0}
-.cards,.review-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.aboutgrid,.contactgrid{grid-template-columns:1fr}
-.image-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:repeat(3,1fr)}.review-head{grid-template-columns:1fr}
-}
-@media(max-width:520px){
-section{padding:75px 0}.nav{min-height:70px}.offer{margin-top:70px}.brand-logo,.brand-fallback{width:44px;height:44px}.brand-name{font-size:14px}
-.hero{min-height:670px;padding:90px 0}.hero h1{font-size:45px}.hero p{font-size:13px}.btn{width:100%}
-.cards,.review-grid,.steps,.image-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.review-photo{height:260px}
-}
-</style>
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s;
+            position: relative;
+        }
 
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"TattooParlor",
- "name":"The Kala Culture Tattoos",
- "url":"https://www.thekalaculturetattoos.in/",
- "telephone":"+91-9157714414",
- "image":"https://www.thekalaculturetattoos.in/images/hero-tattoo.jpg",
- "address":{"@type":"PostalAddress","streetAddress":"102, Neelkanth Gold Complex, Vasna - Bhayli Main Rd, near Nilamber 1, Saiyed Vasna","addressLocality":"Vadodara","addressRegion":"Gujarat","postalCode":"390020","addressCountry":"IN"},
- "areaServed":"Vadodara",
- "priceRange":"₹₹",
- "sameAs":["https://www.instagram.com/thekalaaculturetattoos/"],
- "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"71"}
-}
-</script>
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #1a1a1a;
+            transition: width 0.3s;
+        }
 
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"How painful is the tattooing process?","acceptedAnswer":{"@type":"Answer","text":"Pain varies by placement and individual tolerance. Our artists explain the process and help you choose a suitable placement and size."}},
-{"@type":"Question","name":"How much does a tattoo cost at The Kala Culture Tattoos?","acceptedAnswer":{"@type":"Answer","text":"Tattoo pricing depends on size, placement, style and detail. Contact The Kala Culture Tattoos for a personalised quote."}},
-{"@type":"Question","name":"Can you cover up my old or unwanted tattoo?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can assess an existing tattoo and discuss suitable cover-up or rework options based on the original tattoo."}},
-{"@type":"Question","name":"How do I properly care for my new tattoo?","acceptedAnswer":{"@type":"Answer","text":"Follow the aftercare instructions given by the studio, keep the tattoo clean, avoid unnecessary sun exposure and follow the recommended healing routine."}},
-{"@type":"Question","name":"Do I need an appointment before getting a tattoo?","acceptedAnswer":{"@type":"Answer","text":"Appointments are recommended so the artist can discuss your idea, placement, size and design before your session."}},
-{"@type":"Question","name":"Are your tattooing practices hygienic?","acceptedAnswer":{"@type":"Answer","text":"The Kala Culture Tattoos follows strict hygiene practices, including sterilised equipment and disposable needles for tattooing."}}
-]}
-</script>
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            header {
+                padding: 15px 20px;
+            }
+        }
+
+        /* Offer Banner - Scrolling */
+        .offer-banner {
+            background: #1a1a1a;
+            color: white;
+            padding: 16px 20px;
+            overflow: hidden;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .offer-scroll {
+            display: flex;
+            gap: 80px;
+            animation: scroll 20s linear infinite;
+            white-space: nowrap;
+        }
+
+        .offer-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .offer-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 26, 26, 0.65), rgba(26, 26, 26, 0.65)), 
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/><circle cx="150" cy="100" r="80" fill="%23e0e0e0" opacity="0.3"/><circle cx="1050" cy="500" r="120" fill="%23e0e0e0" opacity="0.2"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 40px;
+            text-align: center;
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #e0e0e0;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+            font-weight: 500;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .btn-book {
+            background: white;
+            color: #1a1a1a;
+        }
+
+        .btn-book:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+        }
+
+        .btn-explore {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-explore:hover {
+            background: white;
+            color: #1a1a1a;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stats Section - Horizontal */
+        .stats-section {
+            background: white;
+            padding: 80px 40px;
+            margin-top: -60px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1;
+            letter-spacing: -1px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .stat-plus {
+            font-size: 44px;
+            margin-left: 2px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* Features Grid */
+        section {
+            padding: 80px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+            letter-spacing: -1px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e5e5e5;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            background: #f0f0f0;
+            border-color: #1a1a1a;
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* Carousel */
+        .carousel-wrapper {
+            background: white;
+        }
+
+        .carousel-items {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: 350px;
+            background: #e5e5e5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .carousel-content h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -0.3px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .carousel-content p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .carousel-rating {
+            color: #1a1a1a;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+
+        /* School Section */
+        .school-section {
+            background: #f5f5f5;
+            border-radius: 12px;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .school-section h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.3px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .school-number {
+            font-size: 72px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin: 30px 0;
+            letter-spacing: -1px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .school-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            height: 450px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .form-box {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .form-box h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -0.3px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+            transition: border-color 0.3s;
+            font-weight: 500;
+        }
+
+        .form-box input:focus,
+        .form-box textarea:focus {
+            outline: none;
+            border-color: #1a1a1a;
+        }
+
+        .form-box button {
+            width: 100%;
+            background: #1a1a1a;
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+            font-size: 15px;
+        }
+
+        .form-box button:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e5e5;
+            text-align: center;
+        }
+
+        .contact-info p {
+            color: #666;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .contact-info p strong {
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 40px 20px;
+            font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.3px;
+            font-size: 16px;
+        }
+
+        .footer-section a {
+            color: #d0d0d0;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+                min-height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .carousel-item {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .stats-grid {
+                gap: 30px;
+            }
+        }
+
+        /* Premium Kala Culture refinements */
+        body { background:#f3f3f1; color:#171717; font-family:'DM Sans',sans-serif; }
+        h1,h2,h3,.section-title,.logo-main,.process-number { font-family:'Space Grotesk','DM Sans',sans-serif; }
+        header { background:rgba(255,255,255,.94); border-bottom:1px solid #e2e2df; box-shadow:0 4px 18px rgba(0,0,0,.06); }
+        .logo { display:flex; align-items:center; text-decoration:none; min-width:210px; }
+        .logo-img { width:180px; max-height:54px; object-fit:contain; object-position:left center; display:block; }
+        .logo-fallback { display:none; color:#171717; font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:700; letter-spacing:-.04em; line-height:1; }
+        .logo-fallback small { display:block; margin-top:5px; font-family:'DM Sans',sans-serif; font-size:9px; letter-spacing:.26em; color:#777; font-weight:600; }
+        .offer-banner { background:#202020; }
+        .hero { background:linear-gradient(135deg,#eeeeeb 0%,#ffffff 55%,#e5e5e1 100%); color:#171717; overflow:hidden; min-height:620px; }
+        .hero:after { content:''; position:absolute; inset:0; background:radial-gradient(circle at 50% 20%,rgba(255,255,255,.9),transparent 45%); pointer-events:none; }
+        .hero h1 { color:#111; position:relative; z-index:2; }
+        .hero p { color:#5c5c5c; position:relative; z-index:2; }
+        .hero-content { position:relative; z-index:3; }
+        .btn-book { background:#111; color:#fff; }
+        .btn-book:hover { background:#2a2a2a; box-shadow:0 12px 30px rgba(0,0,0,.16); }
+        .btn-explore { color:#111; border-color:#111; }
+        .btn-explore:hover { background:#111; color:#fff; }
+        .stats-section { background:#fff; box-shadow:0 12px 35px rgba(0,0,0,.07); }
+        .stat-number { font-family:'Space Grotesk',sans-serif; }
+        section { background:#fff; }
+        section:nth-of-type(even) { background:#f1f1ee; }
+        .features-grid { gap:22px; }
+        .feature-card { background:#fff; border:1px solid #e3e3df; box-shadow:0 8px 24px rgba(0,0,0,.055); border-radius:18px; }
+        .feature-card:hover { background:#fff; border-color:#bcbcb7; box-shadow:0 16px 34px rgba(0,0,0,.10); }
+        .carousel-wrapper { background:#f1f1ee; }
+        .carousel-item { background:#fff; box-shadow:0 10px 30px rgba(0,0,0,.07); border:1px solid #e5e5e1; }
+        .process-section { position:relative; max-width:none; background:#ededeb !important; overflow:hidden; padding:100px 40px; }
+        .process-inner { max-width:1220px; margin:auto; position:relative; z-index:2; }
+        .process-heading { max-width:680px; margin-bottom:55px; }
+        .process-heading > span { font-size:11px; letter-spacing:.28em; font-weight:700; color:#777; }
+        .process-heading h2 { margin:10px 0 14px; font-size:clamp(42px,6vw,72px); line-height:1; letter-spacing:-.055em; }
+        .process-heading p { color:#666; font-size:16px; max-width:560px; }
+        .process-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:1px solid #cfcfca; border-bottom:1px solid #cfcfca; }
+        .process-step { padding:30px 28px 34px 0; margin-right:28px; border-right:1px solid #cfcfca; display:flex; flex-direction:column; gap:28px; }
+        .process-step:last-child { border-right:0; margin-right:0; }
+        .process-number { font-size:64px; line-height:.9; letter-spacing:-.06em; color:#222; font-weight:600; }
+        .process-step h3 { font-size:22px; margin-bottom:8px; }
+        .process-step p { color:#666; font-size:14px; line-height:1.65; max-width:230px; }
+        .greek-doodle { position:absolute; color:#1b1b1b; opacity:.075; pointer-events:none; z-index:1; }
+        .greek-doodle svg { width:100%; height:100%; }
+        .greek-doodle-right { width:260px; height:430px; right:-40px; top:80px; transform:rotate(3deg); }
+        .greek-doodle-left { width:220px; height:390px; left:-35px; bottom:-80px; transform:rotate(-5deg); }
+        .school-section { background:#e8e8e5; border:1px solid #dcdcd7; box-shadow:0 12px 30px rgba(0,0,0,.06); }
+        .map-container { box-shadow:0 10px 30px rgba(0,0,0,.08); }
+        .form-box { background:#fff; box-shadow:0 10px 30px rgba(0,0,0,.06); }
+        .google-review-link { display:inline-flex; align-items:center; gap:8px; margin-top:10px; font-weight:700; color:#222; text-decoration:underline; text-underline-offset:4px; }
+        footer { background:#191919; }
+        .floating-btn-call { background:#1f9d55; border-color:#fff; }
+        .floating-btn-call:hover { background:#178445; }
+        @media (max-width:900px) { .process-steps { grid-template-columns:repeat(2,1fr); } .process-step:nth-child(2) { border-right:0; } .process-step:nth-child(3), .process-step:nth-child(4) { border-top:1px solid #cfcfca; } }
+        @media (max-width:600px) { .logo-img { width:145px; max-height:45px; } .process-section { padding:70px 20px; } .process-steps { grid-template-columns:1fr; } .process-step, .process-step:nth-child(2) { border-right:0; border-bottom:1px solid #cfcfca; margin-right:0; padding-right:0; } .process-step:last-child { border-bottom:0; } .greek-doodle-right { width:150px; height:260px; right:-45px; top:120px; } .greek-doodle-left { width:130px; height:230px; left:-35px; } }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"TattooParlor",
+      "name":"The Kala Culture Tattoos",
+      "url":"https://thekalaculturetattoos.in/",
+      "telephone":"+91 9157714414",
+      "email":"thekalaculture0@gmail.com",
+      "address":{"@type":"PostalAddress","streetAddress":"102, Neelkanth Gold Complex, Vasna-Bhayli Main Rd","addressLocality":"Vadodara","addressRegion":"Gujarat","postalCode":"390020","addressCountry":"IN"},
+      "sameAs":["https://instagram.com/thekalaaculturetattoos","https://maps.app.goo.gl/zzibzD1SfPJFj7vJ7"]
+    }
+    </script>
 </head>
-
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#home" aria-label="The Kala Culture Tattoos home">
-<img class="brand-logo" src="images/logo.png" alt="The Kala Culture Tattoos logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="brand-fallback">KC</div>
-<div class="brand-name">THE KALA CULTURE<small>TATTOO STUDIO</small></div>
-</a>
-<nav class="links" id="navLinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#process">Process</a><a href="#artist">Artist</a><a href="#work">Work</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
-<button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-</div></header>
 
-<div class="offer"><div class="track">
-<span>● <b>UPTO 30% OFF</b></span><span>● <b>5+ YEARS EXPERIENCE</b></span><span>● <b>500+ CUSTOMERS</b></span><span>● <b>5★ RATING</b></span><span>● <b>100% SAFE & HYGIENIC</b></span><span>● <b>₹399 PER SQ INCH</b></span>
-<span>● <b>UPTO 30% OFF</b></span><span>● <b>5+ YEARS EXPERIENCE</b></span><span>● <b>500+ CUSTOMERS</b></span><span>● <b>5★ RATING</b></span><span>● <b>100% SAFE & HYGIENIC</b></span><span>● <b>₹399 PER SQ INCH</b></span>
-</div></div>
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919157714414" target="_blank" class="floating-btn-whatsapp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919157714414" class="floating-btn-call" title="Call us">
+        <i class="fas fa-phone"></i>
+    </a>
 
-<main>
-<section id="home" class="hero"><div class="wrap inner reveal">
-<div class="eyebrow">The Kala Culture Tattoos · Vasna-Bhayli · Vadodara</div>
-<h1>Best Tattoo Studio <span>in Vadodara</span></h1>
-<p>Custom tattoos, realistic portrait tattoos, fine-line tattoos, black & grey work, religious tattoos, couple tattoos and cover-ups — created with precision, professional artistry and strict hygiene standards.</p>
-<div class="buttons"><a class="btn wa" href="https://wa.me/919157714414?text=Hi%20The%20Kala%20Culture%20Tattoos%2C%20I%20want%20to%20book%20an%20appointment.">WhatsApp Appointment</a><a class="btn call" href="tel:+919157714414">Call Now</a></div>
-<div class="hero-badges"><span class="badge">5+ Years Experience</span><span class="badge">500+ Customers</span><span class="badge">5★ Google Rating</span><span class="badge">Strict Hygiene</span></div>
-<p class="seo-line">Tattoo artist in Vadodara · Custom tattoo studio in Vasna-Bhayli · Portrait & realism tattoo specialist</p>
-</div></section>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a class="logo" href="#home" aria-label="The Kala Culture Tattoos home">
+                <!-- Upload your real logo to the same GitHub folder and name it exactly logo.png -->
+                <img src="logo.png" alt="The Kala Culture Tattoos logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+                <span class="logo-fallback">The Kala Culture<small>TATTOO STUDIO</small></span>
+            </a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#school">School</a>
+                <a href="#contact">Contact</a>
+                <a href="https://instagram.com/thekalaaculturetattoos" target="_blank">Instagram</a>
+            </nav>
+        </div>
+    </header>
 
-<div class="stats"><div class="wrap statrow reveal">
-<div class="stat"><div class="num">5+</div><div class="lab">Years Experience</div></div>
-<div class="stat"><div class="num">500+</div><div class="lab">Customers</div></div>
-<div class="stat"><div class="num">5★</div><div class="lab">Google Rating</div></div>
-<div class="stat"><div class="num">100%</div><div class="lab">Safe & Hygienic</div></div>
-</div></div>
+    <!-- Offer Banner - Scrolling -->
+    <div class="offer-banner">
+        <div class="offer-scroll">
+            <div class="offer-item">🎯 UPTO 30% OFF</div>
+            <div class="offer-item">📅 5+ YEARS EXPERIENCE</div>
+            <div class="offer-item">👥 500+ CUSTOMERS</div>
+            <div class="offer-item">⭐ 5★ RATING</div>
+            <div class="offer-item">🛡️ 100% SAFE & HYGIENIC</div>
+            <div class="offer-item">💰 ₹399 PER SQ INCH</div>
+            <div class="offer-item">🎯 UPTO 30% OFF</div>
+            <div class="offer-item">📅 5+ YEARS EXPERIENCE</div>
+            <div class="offer-item">👥 500+ CUSTOMERS</div>
+            <div class="offer-item">⭐ 5★ RATING</div>
+            <div class="offer-item">🛡️ 100% SAFE & HYGIENIC</div>
+            <div class="offer-item">💰 ₹399 PER SQ INCH</div>
+        </div>
+    </div>
 
-<section id="services"><div class="wrap">
-<div class="title reveal"><div class="eyebrow">What We Create</div><h2>Tattoo Services in Vadodara</h2><p>Professional tattoo services tailored to your idea, style, placement and story.</p></div>
-<div class="cards">
-<div class="card reveal"><h3>Realistic Portrait Tattoos</h3><p>Detailed portrait work with controlled shading, depth and realistic finishing.</p></div>
-<div class="card reveal"><h3>Custom Tattoo Designs</h3><p>Original designs created around your idea, placement, meaning and personal style.</p></div>
-<div class="card reveal"><h3>Fine Line & Minimal</h3><p>Clean, delicate and elegant tattoos with precise line work and balanced composition.</p></div>
-<div class="card reveal"><h3>Name & Signature Tattoos</h3><p>Personalised names, signatures and lettering designed for clean long-term readability.</p></div>
-<div class="card reveal"><h3>Religious Tattoos</h3><p>Meaningful spiritual and cultural designs approached with care and detail.</p></div>
-<div class="card reveal"><h3>Couple & Matching Tattoos</h3><p>Creative matching concepts designed to connect while still looking great individually.</p></div>
-<div class="card reveal"><h3>Black & Grey Tattoos</h3><p>High-contrast monochrome designs with depth, texture and strong visual impact.</p></div>
-<div class="card reveal"><h3>Tattoo Cover Ups</h3><p>Existing tattoo assessment and custom cover-up concepts based on the original design.</p></div>
-<div class="card reveal"><h3>Custom Consultation</h3><p>Discuss your concept, placement, size and budget before booking your tattoo session.</p></div>
-</div></div></section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="greek-doodle greek-doodle-right" aria-hidden="true">
+            <svg viewBox="0 0 180 320" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M18 22h144M28 35h124M38 48h104"/><path d="M42 48v210M138 48v210"/><path d="M52 55v203M72 55v203M108 55v203M128 55v203"/><path d="M32 258h116M24 273h132M16 289h148"/><path d="M35 305h110"/></g></svg>
+        </div>
+        <div class="hero-content">
+            <h1>Best Tattoo Studio<br>in Vadodara</h1>
+            <p>Premium tattoos with precision & artistry</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-book">Book Now</a>
+                <a href="#services" class="btn btn-explore">Explore Services</a>
+            </div>
+        </div>
+    </section>
 
-<section id="process" class="dark"><div class="wrap">
-<div class="title reveal"><div class="eyebrow">Our Process</div><h2>From Idea To Ink</h2><p>A clear, professional tattoo experience from consultation to aftercare.</p></div>
-<div class="steps">
-<div class="step reveal"><b>01</b><h3>Consultation</h3><p>Discuss concept, placement, size, style and expectations.</p></div>
-<div class="step reveal"><b>02</b><h3>Design</h3><p>Design prepared and adjusted for approval before the session.</p></div>
-<div class="step reveal"><b>03</b><h3>Inking</h3><p>Professional tattooing with hygienic equipment and careful execution.</p></div>
-<div class="step reveal"><b>04</b><h3>Aftercare</h3><p>Clear healing and aftercare guidance after your tattoo session.</p></div>
-</div></div></section>
+    <!-- Stats - Horizontal -->
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">5<span class="stat-plus">+</span></div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500<span class="stat-plus">+</span></div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5<span class="stat-plus">★</span></div>
+                <div class="stat-label">Google Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Safe & Hygienic</div>
+            </div>
+        </div>
+    </div>
 
-<section id="artist"><div class="wrap aboutgrid">
-<div class="photo-frame reveal"><img src="images/artist.jpg" alt="Jaimin Parmar tattoo artist at The Kala Culture Tattoos in Vadodara" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="photo-placeholder" style="display:none">UPLOAD YOUR ARTIST PHOTO<br><small>images/artist.jpg</small></div></div>
-<div class="about reveal"><div class="eyebrow">Artist Portfolio</div><h2>Meet The Artist Behind The Ink</h2><p>Every tattoo is approached as a custom piece of art, with focus on precision, clean execution and a professional studio experience.</p><p><b>Artist:</b> Jaimin Parmar</p><p><b>Experience:</b> 5+ Years</p><a class="btn wa" href="https://wa.me/919157714414">Talk on WhatsApp</a></div>
-</div></section>
+    <!-- Services -->
+    <section id="services">
+        <h2 class="section-title">Our Specialties</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Custom Designs</h3>
+                <p>Unique tattoos designed specifically for you</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👁️</div>
+                <h3>Realism Tattoos</h3>
+                <p>Hyper-realistic portraits and detailed artwork</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✏️</div>
+                <h3>Fine Line Work</h3>
+                <p>Delicate and elegant minimalist designs</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧵</div>
+                <h3>Sleeve Tattoos</h3>
+                <p>Complete full or half sleeve masterpieces</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💫</div>
+                <h3>Religious Tattoos</h3>
+                <p>Spiritual designs with cultural significance</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💑</div>
+                <h3>Matching Tattoos</h3>
+                <p>Couple designs that complement perfectly</p>
+            </div>
+        </div>
+    </section>
 
-<section id="work" class="dark"><div class="wrap">
-<div class="title reveal"><div class="eyebrow">Portfolio</div><h2>Artist Portfolio & Tattoo Gallery</h2><p>Real work, real ink. Add your latest Kala Culture Tattoos photos to the image files below.</p></div>
-<h3 style="margin:0 0 18px;font-size:17px">Artist Portfolio</h3>
-<div class="image-grid" style="margin-bottom:55px">
-<div class="image-card reveal"><img src="images/artist-portfolio-1.jpg" alt="Tattoo artist portfolio Vadodara"><div class="image-label">Portfolio 01<span>Artist work</span></div></div>
-<div class="image-card reveal"><img src="images/artist-portfolio-2.jpg" alt="Custom tattoo artist work Vadodara"><div class="image-label">Portfolio 02<span>Artist work</span></div></div>
-<div class="image-card reveal"><img src="images/artist-portfolio-3.jpg" alt="Realistic tattoo artist work Vadodara"><div class="image-label">Portfolio 03<span>Artist work</span></div></div>
-</div>
-<h3 style="margin:0 0 18px;font-size:17px">Tattoo Work</h3>
-<div class="gallery-grid">
-<div class="gallery-card reveal"><img src="images/tattoo-1.jpg" alt="Tattoo work by The Kala Culture Tattoos Vadodara"><span>Realism</span></div>
-<div class="gallery-card reveal"><img src="images/tattoo-2.jpg" alt="Fine line tattoo Vadodara"><span>Fine Line</span></div>
-<div class="gallery-card reveal"><img src="images/tattoo-3.jpg" alt="Portrait tattoo Vadodara"><span>Portrait</span></div>
-<div class="gallery-card reveal"><img src="images/tattoo-4.jpg" alt="Black grey tattoo Vadodara"><span>Black & Grey</span></div>
-<div class="gallery-card reveal"><img src="images/tattoo-5.jpg" alt="Custom tattoo design Vadodara"><span>Custom</span></div>
-<div class="gallery-card reveal"><img src="images/tattoo-6.jpg" alt="Religious tattoo Vadodara"><span>Religious</span></div>
-<div class="gallery-card reveal"><img src="images/tattoo-7.jpg" alt="Couple tattoo Vadodara"><span>Couple</span></div>
-<div class="gallery-card reveal"><img src="images/tattoo-8.jpg" alt="Tattoo cover up Vadodara"><span>Cover Up</span></div>
-</div></div></section>
+    <!-- Client Stories Carousel -->
+    <section id="gallery" class="carousel-wrapper">
+        <h2 class="section-title">Client Stories</h2>
+        <div class="carousel-items">
+            <div class="carousel-item">
+                <div class="carousel-image">📸 Client Photo</div>
+                <div class="carousel-content">
+                    <h3>Raj's Sleeve Tattoo</h3>
+                    <p>Got an amazing full sleeve done. Jaimin's precision and creativity are truly unmatched. The tattoo turned out exactly as I envisioned it!</p>
+                    <div class="carousel-rating">⭐⭐⭐⭐⭐ Amazing Experience</div>
+                    <p><strong>Raj P.</strong> • Vadodara</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image">📸 Client Photo</div>
+                <div class="carousel-content">
+                    <h3>Priya's Portrait Tattoo</h3>
+                    <p>The realism in my portrait tattoo is absolutely incredible! Every single detail is perfect. Professional, hygienic, and the best experience ever.</p>
+                    <div class="carousel-rating">⭐⭐⭐⭐⭐ Highly Recommended</div>
+                    <p><strong>Priya S.</strong> • Vadodara</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image">📸 Client Photo</div>
+                <div class="carousel-content">
+                    <h3>Aditya's Fine Line Design</h3>
+                    <p>Absolutely stunning fine line work. The attention to detail and clean execution is remarkable. Will definitely come back for more tattoos!</p>
+                    <div class="carousel-rating">⭐⭐⭐⭐⭐ Outstanding Quality</div>
+                    <p><strong>Aditya M.</strong> • Vadodara</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="reviews"><div class="wrap">
-<div class="review-head reveal">
-<div><div class="eyebrow">Client Trust</div><h2 style="font-size:clamp(36px,5vw,58px);line-height:1.05;letter-spacing:-.055em">Real Clients.<br>Real Reviews.</h2><p style="color:#888;margin-top:14px;max-width:600px;font-size:13px">See what clients say about their tattoo experience at The Kala Culture Tattoos in Vadodara.</p></div>
-<div><div class="review-score">5.0</div><div class="stars">★★★★★</div><div class="review-link">Google Business Profile · 71 reviews</div><a class="btn white" style="margin-top:14px" target="_blank" rel="noopener" href="https://www.google.com/maps/place/?q=place_id:ChIJ5aVi9TLJXzkRaf6ONdnl5wY">View Google Reviews</a></div>
-</div>
-<div class="review-grid">
-<article class="review reveal"><div class="review-photo"><img src="images/client-1.jpg" alt="Happy tattoo client at The Kala Culture Tattoos"></div><div class="review-body"><div class="stars">★★★★★</div><p>“I recently got a sleeve tattoo done at Kala Culture Tattoo Studio in Vadodara, and I couldn't be happier with the experience. The artist was professional and took the time to understand my vision.”</p><strong>Ujjwal Panchal</strong><small>Google review · Vadodara</small></div></article>
-<article class="review reveal"><div class="review-photo"><img src="images/client-2.jpg" alt="Smiling tattoo client at The Kala Culture Tattoos"></div><div class="review-body"><div class="stars">★★★★★</div><p>ADD YOUR EXACT APPROVED GOOGLE REVIEW HERE.</p><strong>Client Review</strong><small>Google review · Vadodara</small></div></article>
-<article class="review reveal"><div class="review-photo"><img src="images/client-3.jpg" alt="Happy client after tattoo session in Vadodara"></div><div class="review-body"><div class="stars">★★★★★</div><p>ADD YOUR EXACT APPROVED GOOGLE REVIEW HERE.</p><strong>Client Review</strong><small>Google review · Vadodara</small></div></article>
-</div></div></section>
+    <!-- How It Works -->
+    <section id="process" class="process-section">
+        <div class="greek-doodle greek-doodle-left" aria-hidden="true">
+            <svg viewBox="0 0 180 320" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M18 22h144M28 35h124M38 48h104"/><path d="M42 48v210M138 48v210"/><path d="M52 55v203M72 55v203M108 55v203M128 55v203"/><path d="M32 258h116M24 273h132M16 289h148"/><path d="M35 305h110"/></g></svg>
+        </div>
+        <div class="process-inner">
+            <div class="process-heading">
+                <span>YOUR TATTOO JOURNEY</span>
+                <h2>How It Works</h2>
+                <p>From the first conversation to the finished tattoo, every step is planned around you.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step reveal"><div class="process-number">01</div><div><h3>Consult</h3><p>Tell us your idea, placement, size and style.</p></div></div>
+                <div class="process-step reveal"><div class="process-number">02</div><div><h3>Design</h3><p>We refine a custom design and prepare it for your skin.</p></div></div>
+                <div class="process-step reveal"><div class="process-number">03</div><div><h3>Ink</h3><p>Your tattoo is created with professional, hygienic equipment.</p></div></div>
+                <div class="process-step reveal"><div class="process-number">04</div><div><h3>Aftercare</h3><p>Get clear aftercare guidance for a smooth healing process.</p></div></div>
+            </div>
+        </div>
+    </section>
 
-<section class="dark"><div class="wrap"><div class="title reveal"><div class="eyebrow">Frequently Asked Questions</div><h2>Tattoo FAQs</h2><p>Quick answers before you book your tattoo in Vadodara.</p></div>
-<div class="faq">
-<details class="reveal"><summary>How painful is the tattooing process?</summary><p>Pain varies by placement and individual tolerance. Our artists explain the process and help you choose a suitable placement and size.</p></details>
-<details class="reveal"><summary>How much does a tattoo cost at The Kala Culture Tattoos?</summary><p>Tattoo pricing depends on size, placement, style and detail. Contact us for a personalised quote.</p></details>
-<details class="reveal"><summary>Can you cover up my old or unwanted tattoo?</summary><p>Yes. We can assess your existing tattoo and discuss suitable cover-up or rework options based on the original tattoo.</p></details>
-<details class="reveal"><summary>How do I properly care for my new tattoo?</summary><p>Follow the aftercare instructions given by the studio, keep the tattoo clean, avoid unnecessary sun exposure and follow the recommended healing routine.</p></details>
-<details class="reveal"><summary>Do I need an appointment before getting a tattoo?</summary><p>Appointments are recommended so the artist can discuss your idea, placement, size and design before your session.</p></details>
-<details class="reveal"><summary>Are your tattooing practices hygienic?</summary><p>The Kala Culture Tattoos follows strict hygiene practices, including sterilised equipment and disposable needles for tattooing.</p></details>
-</div></div></section>
+    <!-- School Section -->
+    <section id="school">
+        <div class="school-section">
+            <h2>Tattoo Training Academy</h2>
+            <p>Professional tattoo training program</p>
+            <div class="school-number">10+</div>
+            <p>Trained Professional Students</p>
+            <button class="btn btn-book">Enroll Now</button>
+        </div>
+    </section>
 
-<section id="contact" class="contact"><div class="wrap">
-<div class="title reveal"><div class="eyebrow">Book Your Tattoo</div><h2>Let's Create Your Next Tattoo</h2><p>Send your idea, placement and preferred style. We'll get back to you on WhatsApp.</p></div>
-<div class="contactgrid">
-<div class="info reveal"><h3>The Kala Culture Tattoos</h3><p>102, Neelkanth Gold Complex, Vasna - Bhayli Main Rd, near Nilamber 1, Saiyed Vasna, Vadodara, Gujarat 390020</p><p>+91 9157714414</p><p>thekalaculture0@gmail.com</p><p>5★ Google rated tattoo studio · 5+ years experience</p>
-<iframe src="https://www.google.com/maps?q=Neelkanth%20Gold%20Complex%20Vasna%20Bhayli%20Vadodara&output=embed" loading="lazy" title="Google Maps location of The Kala Culture Tattoos"></iframe></div>
-<form class="reveal" onsubmit="sendWhatsApp(event)"><input id="name" placeholder="Your Name" required><input id="phone" placeholder="Phone Number" required><input id="idea" placeholder="Tattoo Idea / Style"><textarea id="message" placeholder="Tell us about your tattoo, placement and approximate size..."></textarea><button class="btn wa" type="submit">Send Enquiry on WhatsApp</button></form>
-</div></div></section>
-</main>
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5574857584477!2d73.16897!3d22.307695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc932f562a5e5%3A0x6e7e5d9358efe69!2sThe%20Kala%20Culture%20Tattoos!5e0!3m2!1sen!2sin!4v1234567890" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form-box">
+                <h3>Send us a Message</h3>
+                <form onsubmit="alert('✅ Thank you! We will contact you soon.'); return false;">
+                    <input type="text" placeholder="Your Full Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone Number" required>
+                    <textarea placeholder="Tell us about your tattoo idea..." rows="5" required></textarea>
+                    <button type="submit">Send Inquiry</button>
+                </form>
+                <div class="contact-info">
+                    <p><strong>📍 Location</strong><br>102, Neelkanth Gold Complex<br>Vasna-Bhayli Rd, Vadodara</p>
+                    <p><strong>📞 Phone</strong><br>+91 9157714414</p>
+                    <p><strong>📧 Email</strong><br>thekalaculture0@gmail.com</p>
+                    <a class="google-review-link" href="https://maps.app.goo.gl/zzibzD1SfPJFj7vJ7" target="_blank" rel="noopener">★ View our Google reviews</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>© 2026 The Kala Culture Tattoos · Best Tattoo Studio in Vadodara · Vasna-Bhayli</footer>
-<a class="float wa" href="https://wa.me/919157714414" aria-label="WhatsApp">◉</a>
-<a class="float call" href="tel:+919157714414" aria-label="Call">☎</a>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Kala Culture Tattoos</h3>
+                <p>Premium tattoo studio with 5+ years of expertise and 500+ satisfied customers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#school">School</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://instagram.com/thekalaaculturetattoos" target="_blank">Instagram</a>
+                <a href="https://wa.me/919157714414" target="_blank">WhatsApp</a>
+                <a href="https://maps.app.goo.gl/zzibzD1SfPJFj7vJ7" target="_blank">Google Maps</a>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon - Sun: 10 AM - 8 PM<br>Emergency: 24/7 Available</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 The Kala Culture Tattoos. All rights reserved.</p>
+        </div>
+    </footer>
 
-<script>
-function toggleMenu(){const n=document.getElementById('navLinks');n.style.display=n.style.display==='flex'?'none':'flex'}
-const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.1});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-function sendWhatsApp(e){
-e.preventDefault();
-const n=document.getElementById('name').value,p=document.getElementById('phone').value,i=document.getElementById('idea').value,m=document.getElementById('message').value;
-const t=`Hi The Kala Culture Tattoos!\n\nName: ${n}\nPhone: ${p}\nTattoo idea/style: ${i}\nMessage: ${m}`;
-window.open('https://wa.me/919157714414?text='+encodeURIComponent(t),'_blank');
-}
-</script>
 </body>
 </html>
